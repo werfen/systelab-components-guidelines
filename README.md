@@ -1,2 +1,2 @@
-# systelab-components-guideliness
+# systelab-components-guidelines
 Guidelines for Systelab Components
