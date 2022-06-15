@@ -1,0 +1,188 @@
+    <h1>Dialog</h1>
+    <p>Dialogs inform users about a task and can contain decisive information that requires immediate attention.</p>
+    <div>
+        <img width="100%" src="components/dialog/images/dialog.png">
+    </div>
+    <h2 id="principles">Principles</h2>
+    <p>
+        A dialog is a modal window that appears in front of app content to provide critical information or ask for a decision.
+    </p>
+    <p>
+        Dialogs disable all app functionality when they appear, and remain on screen until confirmed, dismissed, or a required action has been taken.
+    </p>
+    <p>
+        Dialogs are purposefully interruptive, so they should be used sparingly. A less disruptive alternative is to use a menu, which provides options without interrupting a user’s experience.
+    </p>
+    
+    <p>
+        When to use a modal:
+        <ul>
+            <li>To grab user’s attention for an important message.</li>
+            <li>To show additional information without losing the context of the parent page.</li>
+            <li>To break down a complex workflow into a series of less complicated steps.</li>
+        </ul>
+
+        When not to use a modal:
+        <ul>
+            <li>For nonessential information that is not related to the current workflow.</li>
+            <li>For complex workflows that require additional information not contained within the modal.</li>
+            <li>Avoid modal over modal. Context becomes confusing when modals are stacked.</li>
+        </ul>
+    </p>
+    
+    <h2 id="anatomy">Anatomy</h2>
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/container-scrim.png">
+        </div>
+        <div class="col-9">
+            
+                <h3>Container and scrim</h3>
+                <p>
+                Dialog containers appear above other screen elements and hold the dialog’s header, content and footer.
+            
+                To focus attention on the dialog, surfaces behind the container are scrimmed with a temporary overlay to make them less prominent.                 
+            
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/header.png">
+        </div>
+        <div class="col-9">
+            
+            <h3>Header</h3>
+                <p>
+                Dialog containers appear above other screen elements and hold the dialog’s header, content and footer.
+
+                To focus attention on the dialog, surfaces behind the container are scrimmed with a temporary overlay to make them less prominent.                 
+            </p>
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/footer.png">
+        </div>
+        <div class="col-9">
+            
+            <h3>Footer</h3>
+                <p>
+                    Dialog actions are most often represented as buttons and allow users to confirm, dismiss, or acknowledge something.
+                </p>
+                <p>To focus attention on the dialog, surfaces behind the container are scrimmed with a temporary overlay to make them less prominent.</p>
+                <p>Confirming actions are aligned to the ending side of the screen with dismissive actions on the leading side of the confirming action. </p>
+                <p>Other actions to access further functionality can be added and are aligned to the starting side of the screen.
+                </p>
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/navbar.png">
+        </div>
+        <div class="col-9">
+            
+            <h3>Navbar (Optional)</h3>
+                <p>
+                    Dialog actions are most often represented as buttons and allow users to confirm, dismiss, or acknowledge something.
+                </p>
+                <p>To focus attention on the dialog, surfaces behind the container are scrimmed with a temporary overlay to make them less prominent.</p>
+                <p>Confirming actions are aligned to the ending side of the screen with dismissive actions on the leading side of the confirming action. </p>
+                <p>Other actions to access further functionality can be added and are aligned to the starting side of the screen.
+                </p>
+                <hint>
+                    Avoid placing any other element in the footer rather than buttons.
+                </hint>
+        </div>
+    </div>
+    
+
+
+
+    <h2 id="sizes">Sizes</h2>
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/small.png">
+        </div>
+        <div class="col-9">
+            <h3>Small</h3>
+            <p>
+                Consider using small dialogs  for the following scenarios: alerting the user, confirmation dialogs and task-oriented workflows.
+                Max width 440px.
+            </p>        
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/medium.png">
+        </div>
+        <div class="col-9">
+        <h3>Medium (Vertical form)</h3>
+            <p>
+                Consider using small dialogs  for the following scenarios: alerting the user, confirmation dialogs and task-oriented workflows.
+                Max width 440px.
+            </p>        
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/large.png">
+        </div>
+        <div class="col-9">
+        <h3>Large</h3>
+            <p>
+                Consider using small dialogs  for the following scenarios: alerting the user, confirmation dialogs, and task-oriented workflows.
+                Max width 880 px.
+            </p>        
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="components/dialog/images/fullscreen.png">
+        </div>
+        <div class="col-9">
+        <h3>Full screen</h3>
+            <p>
+                When there is a lot of information and a lot of screen space is needed.
+            </p>        
+        </div>
+    </div>
+
+    
+    <h2 id="responsive-layout">Responsive layout</h2>
+    <p>When scaling layouts for larger screens, adjust a dialog’s visual presentation by setting minimum and maximum values for margins, padding, and container dimensions.
+    </p>
+    <p>Dialogs should maintain a minimum 48dp distance from the leading and trailing edges of a screen. On small screens, dialogs scale vertically until reaching 48dp from the screen’s top and bottom edge. On larger displays, dialogs can increase in size to a maximum width of 560dp and maintain a distance of 56dp from the edges of a screen. When a dialog reaches the maximum width, it expands or contracts vertically to support content, up to a maximum height of 560dp.
+    </p>
+    <hint>When using systelab-dialog, use <b>widthRelative</b> and <b>heightRelative</b> to specify size in terms like '75%' or '40vh'. It is suggested also to specify min and max width and height.</hint>
+    
+    
+
+
+    <h2 id="position">Position</h2>
+    <p>Dialogs retain focus until dismissed or an action has been taken, such as choosing a setting. They shouldn’t be obscured by other elements or appear partially on screen, with the exception of full-screen dialogs.</p>
+
+
+
+    <h2 id="scrolling">Scrolling</h2>
+    <p>Most dialog content should avoid scrolling. Even when scrolling is required, the dialog title is pinned at the top, with buttons pinned at the bottom. This ensures selected content remains visible alongside the title and buttons, even upon scroll.
+    </p>
+    <p>Dialogs don’t scroll with elements outside of the dialog, such as the background.</p>
+
+
+
+    <h2 id="dismissing-dialogs">Dismissing dialogs</h2>
+    <p>
+        Dialogs may be dismissed by:
+        <ul>
+            <li>Tapping a "close" icon button put on header on the right side</li>
+            <li>Tapping a "cancel" button, if one is shown</li>
+            <li>Pressing the keyboard Escape key</li>
+        </ul>
+        If the user’s ability to dismiss a dialog is disabled, the user must choose a dialog action to proceed.
+    </p>
+

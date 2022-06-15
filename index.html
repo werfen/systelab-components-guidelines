@@ -1,10 +1,47 @@
-
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Systelab Components Guidelines</title>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css.map">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
 
-</body>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/includeHtml.js"></script>
+    </head>
+    <body>
+        <div include-html="header.html"></div>
+        <div class="layout">
+            <div class="layout__navigation">
+                <div class="u-sticky">
+                    <div id="mainmenu" class="mainmenu" include-html="navigation.html"></div>
+                </div>
+            </div>
+            <div>
+                <div class="layout__content" id="component-content"></div>
+                <div include-html="footer.html"></div>
+            </div>
+            <div>
+                <div class="content__scroll-spy u-sticky" id="content__scroll-spy"></div>
+            </div>
+        </div>
+        <script>
+            if(window.location.search) {
+                var pathComponent = window.location.search.replace('?','');
+                var elmnt = document.getElementById('component-content');
+                elmnt.setAttribute('include-html', pathComponent);
+            } else {
+                var elmnt = document.getElementById('component-content');
+                elmnt.setAttribute('include-html', 'welcome.html');
+            }
+            
+            includeHTML();
+        </script>
+    </body>
 </html>
