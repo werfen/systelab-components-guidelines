@@ -15,6 +15,7 @@
 
 .layout__navigation {
     margin-left: 10px;
+    min-width: 150px;
 }
 .layout__navigation,
 .content__scroll-spy {
