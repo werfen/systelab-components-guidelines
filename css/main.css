@@ -148,6 +148,11 @@ hint {
     line-height: 1.5rem;
 }
 
+hint.warning {
+    background-image: url(../images/warning.svg);
+}
+
+
 @media screen and (min-width: 0px) and (max-width: 1200px) {
     .layout__scrollspy { display: none; }  /* show it on small screens */
 }
