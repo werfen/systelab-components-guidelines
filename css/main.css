@@ -13,6 +13,10 @@
     max-width: 800px;
 }
 
+@media screen and (min-width: 1000px) {
+    .layout__content { min-width: 800px; }
+}
+
 .layout__navigation {
     margin-left: 10px;
     min-width: 150px;
@@ -30,25 +34,25 @@
     padding: .3rem .3rem;
     padding-left: 15px;
     text-decoration: none;
-    color: var(--gray-dark-color);
+    color: var(--brand-color-primary);
 }
 
 .content__scroll-spy a.selected {
-    color: var(--brand-color);
-    border-left: 3px solid var(--brand-color);
+    color: var(--brand-color-secondary);
+    border-left: 3px solid var(--brand-color-secondary);
     margin-left: 0px;
     padding-left: 12px;
 }
 
 .shortcut {
-    border:1px solid var(--brand-color);
+    border:1px solid var(--brand-color-secondary);
     display: block;
     border-radius: 8px;
     min-width: 180px;
     padding: 1rem .8rem;
     text-decoration: none;
     text-align: center;
-    color: var(--brand-color)
+    color: var(--brand-color-secondary)
 }
 
 /* Mainmenu - Sidebar navigation */
@@ -58,13 +62,12 @@
 }
 
 .mainmenu h4 {
-    font-weight: normal;
     font-size: .8rem;
     text-transform: uppercase;
     margin-bottom: .5rem;
     margin-top: 2rem;
     font-weight: bold;
-    color: var(--gray-color);
+    color: var(--brand-color-primary);
     letter-spacing: .2rem;
 }
 
@@ -82,7 +85,7 @@
 .mainmenu li a {
     display: block;
     padding: .2rem .8rem;
-    color: #000;
+    color: var(--brand-color-primary);
     text-decoration: none;    
     border-radius: 4px;
     transition: 0.3s;
@@ -93,7 +96,7 @@
 }
 
 .mainmenu li a.selected {
-    background-color: var(--brand-color);
+    background-color: var(--brand-color-secondary);
     color: #FFF;
 }
 
@@ -156,7 +159,10 @@ hint.warning {
 @media screen and (min-width: 0px) and (max-width: 1200px) {
     .layout__scrollspy { display: none; }  /* show it on small screens */
 }
+
+
 @media print {
     .layout__scrollspy { display: none; }
     .layout__navigation { display: none; }
 }
+

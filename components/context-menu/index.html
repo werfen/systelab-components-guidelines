@@ -1,0 +1,45 @@
+<h1>Menu</h1>
+<p>A contextual menu is a type of menu that appears on demand and contains a small set of relevant actions related to a control, an area of the interface, a piece of data in the application, or a view of the application.</p>
+
+<h2 id="usage">Usage</h2>
+<p>Use a menu to display a list of choices on a temporary surface, such as a set of overflow actions in a top app bar.</p>
+
+<p>Menus allow users to make a selection from multiple options. They’re less prominent and take up less space than a set of radio buttons or choice chips.</p>
+
+<p>A menu opens upon interaction with an element (such as an icon, button, or input field) or when users perform a specific action.</p>
+
+
+<h2 id="placement">Placement</h2>
+
+<p>Menus appear in front of all other permanent UI elements.</p>
+
+<p>Menus are positioned relative to the edge of the screen or browser. They typically appear below, next to (or in front of) the element that generates them. If they are in a position to be cut off by the browser or screen’s edge, the menu can instead appear to the left, right, or above the element that generates it.</p>
+
+<h2 id="anatomy">Anatomy</h2>
+
+<h3>Container</h3>
+<p>Menu containers hold all menu items.</p>
+
+<h3>List items</h3>
+<p>Menus display lists of options. List items can include label text, leading icons, trailing icons, and keyboard commands.</p>
+
+<p>List items have interaction states including hover, focus, and press.</p>
+
+<p>Display list items as disabled when they can only be used sometimes, under certain conditions. They should be displayed as disabled rather than removed.</p>
+
+<h3>Divider</h3>
+<p>Dividers can be used to separate list items into groups.</p>
+
+<h2 id="behaviour">Behaviour</h2>
+
+<p>Include visual elements in the UI to indicate that a contextual menu is available. Advanced users may understand that right-clicking, control-clicking, swiping, or long-pressing will reveal a contextual menu, but not all users will know this. Common visual signifiers for contextual menus include vertical or horizontal ellipsis and down-pointing arrows.</p>
+<p>Keep the menu label or description in view when the dropdown is open. Menu titles provide scope and direction by reminding users what they are choosing. Whenever the labels are obscured or removed when the menu is open, users must recall what they need to select before they can take action. Plan for interruptions that can disrupt the user’s task at any time.</p>
+
+<p>Limit the number of items within a contextual menu. Don’t overwhelm users with expansive lists of options in contextual menus. Keep the list length manageable by including fewer than 10–12 items, to avoid choice overload and ensure that all of the contextual options are visible, without having to scroll. </p>
+<p>If not all menu items are displayed at once, menus can be scrollable. In this state, menus show a persistent scrollbar.</p>
+
+<p>Limit the use of submenus within contextual menus. Submenus triggered from contextual menus can easily disappear if the cursor moves away from the primary list item or if the user accidentally clicks outside of the contextual menu. If a submenu is needed, make sure that none of its options open yet another level of submenus and don’t overload it with obscure commands to the point that it becomes cluttered, confusing, and difficult to use. </p>
+
+<p>List commands in in frequency-of-use order. Don’t make users scan through a long list of disorganized commands. To help users focus on the most relevant options,  place the ones used most often at the top. Because people scan lists from top to bottom, place seldomly used commands low down in the menu. Let users decide which option best meets their needs and, if none of the available options fits, no resulting action should take place when the menu is closed. </p>
+
+<p>Disable items that aren’t relevant to the user’s context. Rather than hiding irrelevant actions, disable them so that users won’t have to try to find where menu items disappeared, nor will they have to determine how to get the system back in the proper context to reveal a specific command. Also, make sure that you include all options (instead of just one) in a family of related commands. For example, if there is a Back, there should also be a Forward. If there's a Cut, there should also be Copy and Paste.</p>
