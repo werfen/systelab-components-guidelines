@@ -42,7 +42,7 @@ function includeHTML() {
       var linkText = document.createTextNode(element.innerHTML);
       a.appendChild(linkText);
       a.title = element.innerHTML;
-      var hash = element.innerHTML.replace(" ","-").toLowerCase()
+      var hash = element.innerHTML.replaceAll(" ","-").toLowerCase()
       a.href = "#"+hash;
       
       if((index===0 && !window.location.hash) || window.location.hash.replace("#","")===hash){
