@@ -1,8 +1,31 @@
 <h1>Button</h1>
-<p>Systelab components includes four types of button components.</p>
-<p>Buttons communicate actions that
-    users can take. They are typically
-    placed throughout your UI</p>
+<p>Systelab components includes four types of button components.
+    Buttons communicate actions that users can take throughout your UI.
+</p>
+
+<div class="d-flex gap-4 mt-5 justify-content-center">
+    <button class="filled mb-4">Filled button</button>
+    <button class="outlined mb-4">Outlined button</button>    
+    <button class="icon mb-4"></button>
+    <button class="link mb-4">Link button</button>
+</div>
+
+
+<h2 id="principles">Principles</h2>
+<div class="row">
+    <div class="col-12 col-sm-4">
+        <h6>Identifiable</h6>
+        <p>Buttons should indicate that they can trigger an action.</p>
+    </div>
+    <div class="col-12 col-sm-4">
+        <h6>Findable</h6>
+        <p>Buttons should be easy to find among other elements, including other buttons.</p>
+    </div>
+    <div class="col-12 col-sm-4">
+        <h6>Clear</h6>
+        <p>A button’s action and state should be clear.</p>
+    </div>
+</div>
 <p>
     Buttons are just one option for
     representing actions in a product and
@@ -15,46 +38,293 @@
 </hint>
 
 
+
+<h2 id="choosing-buttons">Choosing buttons</h2>
+<div class="row">
+    <div class="col-12 col-sm-4">
+        <h6>Variant</h6>
+        <p>Choose the type of button based on the importance of the action.
+            The more important the action is, the more emphasis its button should have.</p>
+    </div>
+    <div class="col-12 col-sm-4">
+        <h6>Rounded corners</h6>
+        <p>All buttons have fully rounded corners</p>
+    </div>
+    <div class="col-12 col-sm-4">
+        <h6>Colors</h6>
+        <p>There are three common color mappings for buttons, primary, secondary and danger</p>
+    </div>
+</div>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Level of emphasis</th>
+        <th scope="col">Variants</th>
+        <th scope="col">Prupose</th>
+        <th scope="col">Example actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <b>High emphasis</b>
+            <div><i>Most important, or most common action on a screen</i></div>
+        </td>
+        <td>Filled</td>
+        <td>
+            Distinguished by their use of fill.
+            They contain actions that are primary to your app.
+        </td>
+        <td>Add, Save,  confirm</td>
+      </tr>
+      <tr>
+        <td>
+            <b>Medium emphasis</b>
+            <div><i>For important actions that don’t distract from other onscreen elements</i></div>
+        </td>
+        <td>Outlined</td>
+        <td>
+            Use an outlined button for actions that need attention but aren’t the primary action. This is also the button to use for giving someone the opportunity to change their mind or escape a flow.
+Outlined buttons are also a lower emphasis alternative to filled buttons, or a higher emphasis alternative to text buttons.
+        </td>
+        <td>Edit, delete, Cancel, refresh data</td>
+      </tr>
+      <tr>
+        <td>
+            <b>Low emphasis</b>
+            <div><i>For optional or supplementary actions with the least amount of prominence</i></div>
+        </td>
+        <td>Link button, Icon</td>
+        <td>
+            Text buttons are typically used for less-pronounced actions, ex  Modals, cards, secondary navigation
+        </td>
+        <td>Navigation link, back to.., scroll spy</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h2 id="hierarchy">Hierarchy</h2>
+
+  <hint>
+    A button’s level of emphasis helps determine its appearance, typography, and placement.
+</hint>        
+
+
+<img class="my-5 d-block mx-auto" src="components/button/images/hierarchy.png">
+
+<div class="row">
+    <div class="col-12 col-sm-6">
+            <h6>Primary action button</h6>
+            Each screen should contain a single prominent button for the primary action. This high-emphasis button commands the most attention. The arrangement of on-screen elements should clearly communicate that other buttons are less important. 
+    </div>
+    <div class="col-12 col-sm-6">
+        <h6>Other buttons</h6>
+        A product can show more than one button at a time in a layout. When using multiple buttons, ensure the available state of one button doesn’t resemble the disabled state of another.
+    </div>    
+</div>
+
+<div class="do-dont-row">
+    <div>
+        <img class="do" src="components/button/images/hierarchy-do.png">
+        <div>Use buttons for discrete actions.</div>
+    </div>
+    <div>
+        <img class="dont" src="components/button/images/hierarchy-dont.png">
+        <div>Don’t clutter your UI with too many buttons. Consider presenting lower-priority actions in overflow menus or as icon buttons.</div>
+    </div>
+</div>
+
+
+
+
+<h2 id="usage">Usage</h2>
+<p>
+    Systelab components comes with three different types of buttons to use. They are provided to give visual distinction between the priority or heirarchy of the buttons in the application.
+</p>
+
+<div class="row mt-5">
+    <div class="col-12 col-sm-4">
+            <button class="filled mb-4">Filled button</button>
+            <ul>
+                <li>Filled buttons have the most visual impact and should be used for important, final actions that complete a flow, like Save, Run tests or Confirm.</li>
+            </ul>
+    </div>
+    <div class="col-12 col-sm-4">
+        <button class="outlined mb-4">Outlined button</button>
+        <ul>
+            <li>Outlined buttons contain actions that are important, but aren’t the primary action in an app.</li>
+            <li>Outlined buttons pair well with filled buttons to indicate an alternative, secondary action</li>
+        </ul>
+    </div>    
+    <div class="col-12 col-sm-4">
+        <button class="link mb-4">Link button</button>
+        <ul>
+            <li>Use text buttons for the lowest priority actions.</li>
+            <li>Text buttons can be placed on a variety of backgrounds.</li>
+            <li>Until the button is interacted with, its container isn’t visible.</li>
+            <li>Are often embedded in components like cards, dialogs. </li>
+        </ul>
+    </div>    
+</div>
+
+<div class="do-dont-row">
+    <div>
+        <img class="dont" src="components/button/images/link-dont-1.png">
+        <div>Don't use link variant for primary actions</div>
+    </div>
+    <div>
+        <img class="dont" src="components/button/images/link-dont.png">
+        <div>Avoid use multiline link button</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 <h2 id="placement">Placement</h2>
 
-<h3>Standard dialogs</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Standard dialogs</td>
+        <td>
+            <p>Button alignment on screen: right</p>
+            <p>Place the affirmative button on the right, the dismissive button on the left.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Forms</td>
+        <td>
+            <p>Button alignment on screen: Left</p>
+            <p>Place the affirmative button on the left, the dismissive button on the right.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Cards</td>
+        <td>
+            <p>Buttons are best placed on the left side of a card to increase their visibility. However, as cards have flexible layouts, buttons may be placed in a location suited to the content and context, while maintaining consistency within the product.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Non-standard dialogs and modal windows</td>
+        <td>
+            <p>Button placement in non-standard dialogs and modal windows depends on the complexity of the content they contain.</p>
+            <p>For dialogs with relatively simple content, it is recommended to place buttons on the right side of a dialog, with the affirmative button to the right of the dismissive button.</p>
+            <p>For lengthy or complex forms, it is recommended to place buttons on the left of the form, with the affirmative button to the left of the dismissive button.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 
-<p>Button alignment on screen: right</p>
-
-<p>Place the affirmative button on the right, the dismissive button on the left.</p>
-
-<h3>Forms</h3>
-
-<p>Button alignment on screen: Left</p>
-
-<p>Place the affirmative button on the left, the dismissive button on the right.</p>
-
-<h3>Cards</h3>
-
-<p>Buttons are best placed on the left side of a card to increase their visibility. However, as cards have flexible layouts, buttons may be placed in a location suited to the content and context, while maintaining consistency within the product.</p>
-
-<h3>Non-standard dialogs and modal windows</h3>
-
-<p>Button placement in non-standard dialogs and modal windows depends on the complexity of the content they contain.</p>
-
-<p>For dialogs with relatively simple content, it is recommended to place buttons on the right side of a dialog, with the affirmative button to the right of the dismissive button.</p>
-
-<p>For lengthy or complex forms, it is recommended to place buttons on the left of the form, with the affirmative button to the left of the dismissive button.</p>
-
-<h2 id="hierarchy">Hierarchy</h2>
-
-<h3>Primary action button</h3>
 
 
-<p>Each screen should contain a single prominent button for the
-    primary action. This high-emphasis button commands the most
-    attention. The arrangement of on-screen elements should
-    clearly communicate that other buttons are less important.</p>
+<div class="do-dont-row">
+    <div>
+        <img class="do" src="components/button/images/placement-do-1.png">
+        <div>When using multiple buttons, indicate the more important action by placing it in a higher-emphasis button, such as a filled button next to a outlined or text button.</div>
+    </div>
+    <div>
+        <img class="do" src="components/button/images/placement-do-2.png">
+        <div>When using multiple buttons, you can place an outlined button (medium emphasis) next to a filled button (high emphasis).</div>
+    </div>
+    <div>
+        <img class="do" src="components/button/images/placement-do-3.png">
+        <div>When using multiple buttons, you can place a text button (low emphasis) next to an outlined button (medium emphasis).</div>
+    </div>
+    <div>
+        <img class="do" src="components/button/images/placement-do-4.png">
+        <div>Use a filled button on its own for a single important action.</div>
+    </div>
+    <div>
+        <img class="dont" src="components/button/images/placement-dont-1.png">
+        <div>Don't align buttons with diferents sizes</div>
+    </div>
+    <div>
+        <img class="dont" src="components/button/images/placement-dont-2.png">
+        <div>Avoid placing a button below another button if there's space to place them side-by-side.</div>
+    </div>
+    <div>
+        <img class="dont" src="components/button/images/placement-dont-3.png">
+        <div>Don’t ungroup elements inside of a button container. This can lead to unwanted movement, such as the icon and label text anchoring to opposite sides of the button.</div>
+    </div>
+    <div>
+        <img class="do" src="components/button/images/placement-do-5.png">
+        <div>
+            Group internal elements so that they scale together. Icons and label text remain centered when button width increases.
+        </div>
+    </div>
+</div>
+<hint>
+    <b>Use a call to action on buttons.</b>
 
-<h3>Other buttons</h3>
+
+    Use descriptive language on buttons relating to the user’s intent. Ex: use "Add" instead "Ok" in a create form.
+</hint>
 
 
-<p>A product can show more than one button at a time in a layout.
-    When using multiple buttons, ensure the available state of one
-    button doesn’t resemble the disabled state of another.</p>
+<h2 id="interaction">Interaction</h2>
+<p>Buttons have built-in loading and disabled states.</p>
+
+<div class="row">
+    <div class="col-12 col-sm-6">
+            <h6>Loading States</h6>
+            Use the button's loading state when you need to communicate that the application is working on a call-to-action a user has iniated by clicking on the button. Loading state prevent further execution of the call-to-action.
+    </div>
+    <div class="col-12 col-sm-6">
+        <h6>Disabled Buttons</h6>
+        Buttons may be disabled to indicate to a user that the call-to-action is unavailable. It should be clear to the user why a button is disabled, however, and users should be directed how enable the call-to-action if that is possible.
+    </div>    
+</div>
+
+
+<style>
+    .filled {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0 20px ;
+        font-size: 1rem;
+        border-radius: 90px;
+        border: none;
+        height: 38px;
+    }
+    .outlined {
+        border: 1px solid var(--primary-color);
+        background-color: white;
+        color: var(--primary-color);
+        font-size: 1rem;
+        height: 38px;
+        padding: 0 20px;
+        border-radius: 90px;
+    }
+    .link {
+        background: none;
+        border: none;
+        color: var(--primary-color);
+        font-size: 1rem;
+    }
+    .icon {
+        border: 1px solid var(--primary-color);
+        background-color: white;
+        color: var(--primary-color);
+        background-image:url(components/button/images/search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 38px;
+        width: 38px;
+        border-radius: 90px;
+    }
+</style>
