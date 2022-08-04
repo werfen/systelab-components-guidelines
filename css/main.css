@@ -118,6 +118,10 @@
     width: 100%;
 }
 
+.layout__content > .row img + p {
+    margin-top: .5rem;
+}
+
 .layout__content > .row p {
     margin: 0;
     margin-bottom: 1rem;

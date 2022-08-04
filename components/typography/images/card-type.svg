@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="337px" height="195px" viewBox="0 0 337 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 27</title>
+    <defs>
+        <path d="M4,0 L331,0 C333.209139,-4.05812251e-16 335,1.790861 335,4 L335,189 C335,191.209139 333.209139,193 331,193 L4,193 C1.790861,193 5.59961202e-15,191.209139 0,189 L0,4 C-2.705415e-16,1.790861 1.790861,3.95852593e-15 4,0 Z" id="path-1"></path>
+        <filter x="-0.6%" y="-0.5%" width="101.2%" height="102.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.126726676 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="--------------" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-27" transform="translate(1.000000, 0.000000)">
+            <g id="Rectangle-4">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <path stroke="#E3E3E3" stroke-width="1" d="M331,0.5 C331.966498,0.5 332.841498,0.891750844 333.474874,1.52512627 C334.108249,2.15850169 334.5,3.03350169 334.5,4 L334.5,4 L334.5,189 C334.5,189.966498 334.108249,190.841498 333.474874,191.474874 C332.841498,192.108249 331.966498,192.5 331,192.5 L331,192.5 L4,192.5 C3.03350169,192.5 2.15850169,192.108249 1.52512627,191.474874 C0.891750844,190.841498 0.5,189.966498 0.5,189 L0.5,189 L0.5,4 C0.5,3.03350169 0.891750844,2.15850169 1.52512627,1.52512627 C2.15850169,0.891750844 3.03350169,0.5 4,0.5 L4,0.5 Z" stroke-linejoin="square" fill="#F4F4F4" fill-rule="evenodd"></path>
+            </g>
+            <path d="M5,1 L330,1 C332.209139,1 334,2.790861 334,5 L334,64 L334,64 L1,64 L1,5 C1,2.790861 2.790861,1 5,1 Z" id="Rectangle-4" fill="#FFFFFF"></path>
+            <text id="Subtitle-1" font-family="Lato-Regular, Lato" font-size="24" font-weight="normal" fill="#000000">
+                <tspan x="55" y="43">Subtitle 1</tspan>
+            </text>
+            <rect id="Rectangle-8" stroke="#CCCDCD" fill="#FFFFFF" x="16.5" y="22.5" width="24" height="24" rx="5"></rect>
+            <text id="Body-1" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" fill="#6A6A6A">
+                <tspan x="16" y="165">Body 1</tspan>
+            </text>
+            <line x1="18.5" y1="128.5" x2="316.5" y2="128.5" id="Line-23" stroke="#8C8C8C" opacity="0.180361793" stroke-linecap="square"></line>
+            <text id="OVERLINE-Subtitle-2" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" line-spacing="23" letter-spacing="1">
+                <tspan x="17.88" y="84" fill="#9B9B9B">OVERLINE</tspan>
+                <tspan x="84.302" y="84" font-family="Lato-Regular, Lato" font-weight="normal" fill="#9B9B9B"></tspan>
+                <tspan x="16" y="107" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#3F3F3F">Subtitle 2</tspan>
+            </text>
+            <text id="OVERLINE-Subtitle-2" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" line-spacing="23" letter-spacing="1">
+                <tspan x="251.578" y="84" fill="#9B9B9B">OVERLINE</tspan>
+                <tspan x="232.12" y="107" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#3F3F3F">Subtitle 2</tspan>
+            </text>
+            <text id="Caption…" font-family="Lato-Regular, Lato" font-size="12" font-weight="normal" fill="#888888">
+                <tspan x="267.456" y="51">Caption…</tspan>
+            </text>
+            <rect id="Rectangle" fill="#0D83AD" x="248" y="14" width="70" height="23" rx="3"></rect>
+            <text id="BODY-2" font-family="Lato-Regular, Lato" font-size="14" font-weight="normal" letter-spacing="0.583333333" fill="#FFFFFF">
+                <tspan x="256.762099" y="31">BODY 2</tspan>
+            </text>
+            <text id="OVERLINE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="252.578" y="155">OVERLINE</tspan>
+            </text>
+            <text id="Body-1" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" fill="#3F3F3F">
+                <tspan x="270.248" y="174">Body 1</tspan>
+            </text>
+            <g id="Group-6" transform="translate(86.000000, 145.000000)">
+                <rect id="Rectangle" stroke="#D4D4D4" fill="#FFFFFF" x="0.5" y="0.5" width="44" height="27" rx="2"></rect>
+                <path d="M30.5,12.5 L33.5,15.5 M36.5,12.5 L33.5,15.5" id="Combined-Shape" stroke="#6A6A6A" stroke-linecap="round"></path>
+                <text id="2" font-family="Lato-Regular, Lato" font-size="14" font-weight="normal" fill="#6A6A6A">
+                    <tspan x="10" y="20">2</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

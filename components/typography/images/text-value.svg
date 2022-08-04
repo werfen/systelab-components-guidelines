@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="452px" height="114px" viewBox="0 0 452 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <g id="--------------" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7">
+            <text id="TITLE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="0" y="12">TITLE</tspan>
+            </text>
+            <text id="Value" font-family="Lato-Regular, Lato" font-size="14" font-weight="normal" fill="#3F3F3F">
+                <tspan x="0" y="29">Value</tspan>
+            </text>
+            <text id="OVERLINE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="0" y="82">OVERLINE</tspan>
+            </text>
+            <text id="Body-2" font-family="Lato-Regular, Lato" font-size="14" font-weight="normal" fill="#3F3F3F">
+                <tspan x="0" y="99">Body 2</tspan>
+            </text>
+            <text id="TITLE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="111" y="12">TITLE</tspan>
+            </text>
+            <text id="Value" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" fill="#3F3F3F">
+                <tspan x="111" y="31">Value</tspan>
+            </text>
+            <text id="OVERLINE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="111" y="82">OVERLINE</tspan>
+            </text>
+            <text id="Body-1" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" fill="#3F3F3F">
+                <tspan x="111" y="101">Body 1</tspan>
+            </text>
+            <text id="TITLE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="223" y="12">TITLE</tspan>
+            </text>
+            <text id="Value" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#3F3F3F">
+                <tspan x="223" y="35">Value</tspan>
+            </text>
+            <text id="OVERLINE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="223" y="82">OVERLINE</tspan>
+            </text>
+            <text id="Subtitle-2" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#3F3F3F">
+                <tspan x="223" y="105">Subtitle 2</tspan>
+            </text>
+            <text id="TITLE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="351" y="12">TITLE</tspan>
+            </text>
+            <text id="Value" font-family="Lato-Regular, Lato" font-size="24" font-weight="normal" fill="#3F3F3F">
+                <tspan x="351" y="39">Value</tspan>
+            </text>
+            <text id="OVERLINE" font-family="Lato-Bold, Lato" font-size="12" font-weight="bold" letter-spacing="1" fill="#9B9B9B">
+                <tspan x="351" y="82">OVERLINE</tspan>
+            </text>
+            <text id="Subtitle-1" font-family="Lato-Regular, Lato" font-size="24" font-weight="normal" fill="#3F3F3F">
+                <tspan x="351" y="109">Subtitle 1</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

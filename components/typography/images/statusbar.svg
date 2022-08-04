@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="38px" viewBox="0 0 174 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 25</title>
+    <g id="--------------" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8">
+            <rect id="Rectangle-19" fill="#FFFFFF" x="0" y="0" width="174" height="38" rx="3"></rect>
+            <text id="HCA-1-Ready" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="14" fill="#3F3F3F">
+                <tspan x="50.175" y="19">HCA 1</tspan>
+                <tspan x="50" y="33.5949402" font-family="Lato-Light, Lato" font-weight="300">Ready</tspan>
+            </text>
+            <g id="UI/Status/Indicator" transform="translate(14.000000, 16.000000)" fill="#C2D95D">
+                <rect id="Rectangle-8" x="0" y="0" width="22" height="6" rx="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
