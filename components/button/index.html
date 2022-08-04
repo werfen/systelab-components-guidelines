@@ -190,6 +190,35 @@ Outlined buttons are also a lower emphasis alternative to filled buttons, or a h
 
 <h2 id="placement">Placement</h2>
 
+<p>Users have used many sites and applications before Systelab Components and gotten used to certain button placement patterns.</p>
+<h3>
+    The placement of your buttons matter
+</h3>
+<div class="row">
+    <div class="col-12 col-sm-6">
+            <img src="components/button/images/z-pattern.png" class="mb-4">
+            
+            <h6>Z pattern</h6>
+            The Z-pattern is a natural way for the user to go through content within a constrained container and when tasks are oriented from the top-left and ending with a primary call to action on the right bottom side of the container.
+            
+
+    </div>
+    <div class="col-12 col-sm-6">
+        <img src="components/button/images/f-pattern.png" class="mb-4">
+        <h6>F-patern</h6>
+        The F-pattern is a natural way to go through content in an unconstrained container, such as a form on the page itself. The user will go through the content line-by-line, arriving at a call to action at the end
+    </div>    
+</div>
+<hint>
+    In small windows, the primary action button should be placed at the bottom right
+</hint>
+
+<p>
+    At Werfen we find complex applications with a lot of information, which in most cases, require the applications to be in fullscreen mode. In these cases we normally have a fixed toolbar so that the content of the page does not vary the position of the buttons and we can place buttons on the right and on the left. We will place the buttons of the main actions of the screen on the right and the contextual or secondary actions on the left.
+</p>
+
+<img src="components/button/images/fullscreen.png" class="mb-4">
+
 <table class="table">
     <thead>
       <tr>
@@ -232,6 +261,7 @@ Outlined buttons are also a lower emphasis alternative to filled buttons, or a h
 
 
 
+
 <div class="do-dont-row">
     <div>
         <img class="do" src="components/button/images/placement-do-1.png">
@@ -257,6 +287,51 @@ Outlined buttons are also a lower emphasis alternative to filled buttons, or a h
         <img class="dont" src="components/button/images/placement-dont-2.png">
         <div>Avoid placing a button below another button if there's space to place them side-by-side.</div>
     </div>
+</div>
+<hint>
+    <b>Use a call to action on buttons.</b>
+    Use descriptive language on buttons relating to the user’s intent.
+    Avoid generic commands such as "OK" in a dialog box
+</hint>
+
+<h2 id="visual-style">Visual style</h2>
+
+<h6>Border Radius</h6>
+Systelab components buttons are full rounded
+<hr>
+<h6>Size</h6>
+Systelab components offers three button sizes:
+<ul>
+    <li><b>Large</b> height of 38px</li>
+    <li><b>Normal</b> height of 38px</li>
+    <li><b>Small</b> height of 38px</li>
+</ul>
+<hr>
+<h6>Primary color</h6>
+A primary color provides consistency across an application. It trains the user to look for that color when trying to find an action. Systelab components defaults to blue. This "action blue" can be found across all types of buttons, tabs, and other action-related components.
+<hr>
+<h6>Action-based color</h6>
+Different colors may be used based on the severity of an action's result. For example, using a red button when "deleting" files indicates high severity.
+<hr>
+<h6>Icons</h6>
+Icon buttons are useful where interface space may be limited. If an icon represents the action well, users can sometimes recognize them quicker than reading text. Lastly, using icon buttons can help in the situation where the use of long labels may be challenging.
+
+<p>Systelab components use a <a href="https://fontawesome.com/">Font Awesome</a> library.</p>
+<hint>
+    We recommend you <b>choose an icon that best describes the action</b> that the user will be doing. Users may avoid unknown or abstract icon buttons.
+</hint>
+
+
+<div class="do-dont-row">
+    <div>
+        <img class="do" src="components/button/images/icons.png">
+        <div>Icon buttons are available in the solid, outline, and flat types. It’s also best to use the normal (38px) sized ones. This makes them easier to recognize and to click.</div>
+    </div>
+    <div>
+        <img class="do" src="components/button/images/button-icon.png">
+        <div>If you have the space, adding text helps users understand the action. Start icon buttons with icons and follow with text.</div>
+    </div>
+
     <div>
         <img class="dont" src="components/button/images/placement-dont-3.png">
         <div>Don’t ungroup elements inside of a button container. This can lead to unwanted movement, such as the icon and label text anchoring to opposite sides of the button.</div>
@@ -268,12 +343,7 @@ Outlined buttons are also a lower emphasis alternative to filled buttons, or a h
         </div>
     </div>
 </div>
-<hint>
-    <b>Use a call to action on buttons.</b>
 
-
-    Use descriptive language on buttons relating to the user’s intent. Ex: use "Add" instead "Ok" in a create form.
-</hint>
 
 
 <h2 id="interaction">Interaction</h2>
