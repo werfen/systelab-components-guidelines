@@ -1,27 +1,70 @@
-<h1>Spinner</h1>
+<h1>Stepper</h1>
 <p>An input stepper is a two-segment UI control used to incrementally increase or decrease a numeric value.</p>
-<div class="d-flex justify-content-center">
-    <img src="components/spinner/images/spinner.png">
+<div class="d-flex justify-content-center my-5">
+    <img src="components/stepper/images/stepper.svg">
 </div>
+<p>
 Use Input Steppers When	The numeric field has a most commonly selected value and most users will not deviate insignificantly from it (e.g., number of passengers).
-
+</p>
 <h2 id="anatomy">Anatomy</h2>
 
 <p>A spinner contains the following elements:</p>
 
-<h3>Minus Button</h3>
-<p>Decrease the value.</p>
-<h3>Value</h3>
-<p>Current selected value</p>
-<h3>Plus Button</h3>
-<p>Increase the value.</p>
-<h3>Units (Optional)</h3>
-<p>Always on the right to define the units of the value.</p>
+<h6>Minus Button</h6>
+Decrease the value.
+<hr>
+<h6>Value</h6>
+Current selected value
+<hr>
+<h6>Plus Button</h6>
+Increase the value.
+<hr>
+<h6>Units (Optional)</h6>
+Always on the right to define the units of the value.
+<p><img class="mt-3" src="components/stepper/images/stepper-units.svg"></p>
 
 <hint>Clarify the step value and the stepper range. You should make the step and the unit explicit  (e.g., dollars, cents, percentage). Also, if the input value has a maximum or minimum limit, be sure to indicate it. It is usually best to have a stepper change the current value by a step of one unit per button-press, but there can be cases where other step values are more appropriate, if indicated by a task analysis.</hint>
 
-
 <h2 id="usage">Usage</h2>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>When to use</th>
+        <th>When do not use</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            The numeric field has a most commonly selected value and most users will not deviate insignificantly from it (e.g., number of passengers).
+        </td>
+        <td>
+            The numeric field can take a wide range of values (e.g., age), with no one value being entered significantly more often than others.
+        </td>
+      </tr>
+      <tr>
+        <td>
+            The numeric field needs to be adjusted by a small, discrete amount or precision is not important (e.g., number of bedrooms).	
+        </td>
+        <td>
+            The numeric field is continuous and the exact value is important.
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+            There is enough room for generous spacing of the stepper segments.	
+        </td>
+        <td>
+            Limited design space for button layout would make the stepper segments small or cramped.
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 
 <p>Use steppers for numerical fields with a clear most frequently selected value. Steppers work well for fields that have one commonly entered value and most other input values deviate only slightly from that. If there is a lot of variability in the range of values that users normally enter for a field (e.g., for age or date of birth), a stepper is not appropriate.</p>
 <p>Set the most frequently selected value as a stepper default.</p>
