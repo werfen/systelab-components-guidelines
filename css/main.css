@@ -62,10 +62,17 @@
     font-size: .8rem;
     text-transform: uppercase;
     margin-bottom: .5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-weight: bold;
     color: var(--gray-color);
     letter-spacing: .2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainmenu h4.collapsed .rotate-icon {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
 .mainmenu ul {
@@ -237,3 +244,13 @@ hint.warning {
     .layout__navigation { display: none; }
 }
 
+
+
+/* Utilities */
+.u-gap-2 {
+    gap: 2rem;
+}
+
+.u-gap-y-2 {
+    row-gap: 2rem;
+}
