@@ -1,0 +1,100 @@
+<h1>Checkbox</h1>
+<p>
+    Checkboxes are used when there is a list of options and the user may select any number of choices, including zero. Each checkbox is independent of all other checkboxes in the list, and checking one box doesn’t uncheck the others.
+</p>
+
+<div class="d-flex justify-content-center mt-5">
+    <img src="components/checkbox/images/checkbox-group.svg">
+</div>
+
+
+
+
+<h2 id="when-to-use">When to use</h2>
+
+<ul>
+    <li>
+        <b>Forms.</b> Can be used in forms on a full page, in modals, or on side panels.
+    </li>
+    <li>
+        <b>Filtering and batch action. </b>Used to filter data either on a page, in a menu, or within a component. Checkboxes are found in Data table for batch editing purposes.
+    </li>
+    <li>
+        <b>Lists with sub-selections.</b>Used when there is a parent and child relationship. You can use a parent checkbox to make a bulk selection of all list items. Unchecking the parent deselects all of the list items. Alternatively, you can select children individually when the parent is not selected, which is where the indeterminate state comes in to play.
+    </li>
+</ul>
+
+
+
+
+
+<h2 id="when-not-to-use">When not to use</h2>
+<p>
+    If a user can select only one option from a list, radio buttons should be used instead of checkboxes. Checkboxes allow the user to select multiple items in a set whereas radio buttons allow the user to select only one option.
+</p>
+<hint>
+    Don't use checkbox when multiple items can't be selected.
+</hint>
+
+
+<h2 id="anatomy">Anatomy</h2>
+<div class="d-flex justify-content-center mb-5">
+    <img src="components/checkbox/images/anatomy.svg">
+</div>
+<div><b>1. Button/box:</b> Labels describe the meaning of input fields.</div>
+<div><b>2. Label (optional):</b>
+    Text that represent the chosen option. Text should be always present at the right. Users select an option by clicking on either the button/box itself or its label
+    
+</div>
+<div><b>3. Assistance (optional):</b> Any help that explans how to fill out the form. It make sense when use more than one choices</div>
+
+
+
+<h2 id="layout">Layout</h2>
+
+<p>Layout your lists vertically, with one choice per line.</p>
+<div class="d-flex justify-content-center my-5">
+    <img src="components/checkbox/images/layout-vertical.svg">
+</div>
+
+<p>
+    If you must use a horizontal layout with multiple options per line, make sure to space the buttons and labels so that it's abundantly clear which choice goes with which label.
+</p>
+<div class="d-flex justify-content-center my-5">
+    <img src="components/checkbox/images/layout-horizontal.svg">
+</div>
+
+<h3>Error state</h3>
+<div class="d-flex justify-content-center align-items-center py-5">
+    <img  src="components/checkbox/images/error-vertical.svg">
+</div>
+
+
+
+<h2 id="placement">Placement</h2>
+
+
+<p>
+    The checkbox component is often used in forms.
+</p>
+
+<div class="row">
+    <div class="col-12 col-sm-6">            
+        <img src="components/checkbox/images/form.svg">
+        <p>Forms can be placed on a full page</p>
+    </div>
+    <div class="col-12 col-sm-6">
+        <img src="components/checkbox/images/modal.svg">
+        <p>In a modal</p>
+    </div>    
+    <div class="col-12 col-sm-6">
+        <img src="components/checkbox/images/dropdown.svg">
+        <p>In a side panel (dropdown). A radio button can also be used for changing settings in a menu or selecting a singular item in a data table.</p>
+    </div>    
+    <div class="col-12 col-sm-6">
+        <img src="components/checkbox/images/table.svg">
+        <p>It is possible to create a checkbox button without a label. You can use it for bulk actions or in a boolean field in a row table.</p>
+    </div>    
+</div>
+
+

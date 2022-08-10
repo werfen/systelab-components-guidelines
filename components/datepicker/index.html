@@ -1,10 +1,5 @@
 <h1>Datepicker</h1>
-<p>Pickers are used to display past, present, or future dates or times. The kind of date (exact, approximate, memorable) you are requesting from the user will determine which picker is best to use. Each picker’s format can be customized depending on location or need.</p>
-
-<h2 id="when-yo-use">When to use</h2>
-<p>
-  Use date and time pickers when you are asking the user for a time or date, or for scheduling tasks.
-</p>
+<p>Pickers are used to display past, present, or future dates. </p>
 
 
 <h2 id="anatomy">Anatomy</h2>
@@ -21,3 +16,35 @@
 <div><b>5. Month and year label:</b> Indicate the current year and month frame.</div>
 <div><b>6. Previous and next month/year controls:</b> Allows the user to move forward or backward time. </div>
 <div><b>7. Day:</b> Days in the month</div>
+
+<h2 id="design-guidelines">Design guidelines</h2>
+<ul>
+  <li>
+    Date picker is a calendar-view popover. It is paired with a text input so that it can send a formatted date value to the input.
+  </li>
+  <li>
+    Date picker is shown by clicking, or gaining focus on the input field.
+  </li>
+  <li>
+    Today’s date is selected with border blue. Unless preloaded with another date, today’s date will be selected in the Date Picker.
+  </li>
+  <li>
+    Clicking on the check-calendar icon inside the Date Picker returns the focus to today’s date.
+  </li>
+  <li>
+    Focus is indicated by a grey background.
+  </li>
+</ul>
+
+
+<h2 id="usage">Usage</h2>
+<p>
+  A Date picker is used to select a date when a user needs to understand the date in context with other possible dates. Date choices are influenced by day of the week, or week within a month.
+</p>
+<p>
+  Date pickers aren’t helpful when the date is a known value like a birthdate. A user will likely want to type that value in versus hunting for it in a Date Picker. In cases where space is limited, it may be a good idea to omit the Date Picker.
+</p>
+<hint>
+  A date picker is also helpful when the formatting of the date is important.
+</hint>
+
