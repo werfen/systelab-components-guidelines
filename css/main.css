@@ -17,6 +17,16 @@
     margin-left: 10px;
     min-width: 150px;
 }
+
+.layout__navigation__search {
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid var(--gray-light-color);
+    font-weight: normal;
+    color: var(--gray-dark-color);
+    width: 100%;
+}
+
 .layout__navigation,
 .content__scroll-spy {
     width: 230px;
@@ -104,13 +114,6 @@
     background-color: var(--brand-color);
     color: #FFF;
 }
-
-/* Utilities */
-.u-sticky {
-    position: sticky;
-    top: 110px;
-}
-
 
 
 /* Component styles */
@@ -253,4 +256,9 @@ hint.warning {
 
 .u-gap-y-2 {
     row-gap: 2rem;
+}
+
+.u-sticky {
+    position: sticky;
+    top: 110px;
 }
