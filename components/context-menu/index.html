@@ -1,0 +1,69 @@
+<h1>Context Menu</h1>
+<p>
+  Use the context menu component when additional options are available to the user but there is a space constraint
+</p>
+
+<div class="d-flex justify-content-center flex-column align-items-center my-5">
+  <img src="components/context-menu/images/context-button.svg">
+</div>
+<hr>
+
+<div class="d-flex justify-content-center flex-column align-items-center my-5">
+  
+  <img src="components/context-menu/images/context-menu.svg">
+</div>
+
+
+<h2 id="anatomy">Placement</h2>
+<p>
+  Use the context menu when the user need to perform actions on a particular element of the UI.
+  Some very clear use cases:
+  <ul>
+    <li><b>Data grid:</b> we will use it to perform actions on a row such as deleting a record</li>
+    <li><b>Cards:</b> let's suppose we have some cards that represent instruments of a system, in the context menu you could put the actions on each instrument as for example: stop, rename, delete, restart, etc</li>
+  </ul>
+</p>
+
+<div class="do-dont-row">
+  <div>
+      <img class="info" src="components/context-menu/images/placement-grid.svg">
+      <div>Context menu used in a grid</div>
+  </div>
+  <div>
+    <img class="info" src="components/context-menu/images/placement-card.svg">
+    <div>Context menu used in a card</div>
+  </div>
+</div>
+
+
+
+
+<h2 id="Usage">Usage</h2>
+
+  <h3>Text</h3>
+  <p>
+The text within an overflow menu should be direct so users can quickly decide on an action. Actions that could cause a significant change to the user’s data (delete app, delete service, etc.) are separated by a divider and live below the primary set of actions.
+</p>
+<div class="d-flex justify-content-center my-5">
+  <img src="components/context-menu/images/instrument.svg">
+</div>
+
+
+<h3>Nested</h3>
+<p>
+  Nested menus are an extension of dropdown menus. They save screen space by organizing a long list of items into categories that the user can click to reveal deeper levels.
+  </p>
+  <div class="d-flex justify-content-center my-5">
+    <img src="components/context-menu/images/children-option.svg">
+  </div>
+
+  <h3>Scroll</h3>
+<p>
+  Scroll is available in cases that there are a lot of menus.
+  </p>
+  <div class="d-flex justify-content-center my-5">
+    <img src="components/context-menu/images/scroll.svg">
+  </div>
+<hint>
+  For a better user experience avoid scroll or nested menus.
+</hint>
