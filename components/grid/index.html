@@ -1,0 +1,165 @@
+<h1>Grid (Data Table)</h1>
+<p>
+  Data tables are used to organize and display data efficiently. The data table component allows for customization with additional functionality, as needed by your product’s users.
+</p>
+
+
+<h2 id="overview">Overview</h2>
+<p>
+  The data table’s features are ideal for organizing and displaying data in a UI. The column headers can sort data in ascending or descending order, rows can be expanded to progressively disclose information, and single or batch actions can be taken on rows.
+
+  The data table toolbar gives a location for primary buttons, search, filtering, table display settings, and other utilities.
+</p>
+
+<h2 id="when-to-use">When to use</h2>
+<ul>
+  <li>To organize and display data.</li>
+  <li>If your user must navigate to a specific piece of data to complete a task.</li>
+</ul>
+
+
+<h2 id="when-not-to-use">When not to use</h2>
+<ul>
+  <li>When a more complex display of the data or interactions are required.</li>
+  <li>As a replacement for a spreadsheet application.</li>
+</ul>
+
+<h2 id="formatting">Formatting</h2>
+<h3>Anatomy</h3>
+
+
+<img width="100%" src="components/grid/images/anatomy.svg" class="mb-4">
+
+<div><b>1. Toolbar:</b> global data table controls including search and table settings.</div>
+<div><b>2. Column header:</b>
+  title for the row header with the optional sorting behavior.
+    
+</div>
+<div><b>3. Table row:</b> can be configured to show different types of data. Rows can be selectable and uses zebra stripes that styles the table rows with alternating colors to make scanning horizontal information easier for the user.</div>
+<div><b>4. Pagination table bar:</b> an optional component that lets a user navigate data as pages when the amount of data it too large to be shown at once.</div>
+
+<h3>Sizing</h3>
+<p>
+  The data table is available in two different row sizes: large, small.
+</p>
+
+
+
+
+<div class="d-flex justify-content-center flex-column align-items-center my-5">
+  <img src="components/grid/images/small.svg">
+</div>
+<hr>
+
+<div class="d-flex justify-content-center flex-column align-items-center my-5">
+  <img src="components/grid/images/large.svg">
+</div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Size</th>
+      <th>When to use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <b>Small</b>
+      </td>
+      <td>In applA standalone tab that can also be nested within components. It is commonly used within components or for content using the entire page for layout, not connected to any other components.</td>
+    </tr>
+    <tr>
+      <td>
+          <b>Large (default)</b>
+      </td>
+      <td>An emphasized tab that is always attached to a background container. It is commonly used for defined content areas, like sub-pages or attached to cards. </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+
+<h2 id="placement">Placement</h2>
+
+<p>
+  Data tables should be placed in a page’s main content area and given plenty of space to display data without truncation.
+</p>
+<div class="do-dont-row">
+  <div>
+      <img class="do" src="components/grid/images/wide.svg">
+  </div>
+  <div>
+    <img class="do" src="components/grid/images/full.svg">
+  </div>
+  <div>
+    <img class="do" src="components/grid/images/in-tab.svg">
+  </div>
+  <div>
+    <img class="dont" src="components/grid/images/dont.svg">
+  </div>
+</div>
+<hint>
+  Avoid placing data tables inside modals or smaller containers where the information can feel cramped or needs truncation
+</hint>
+
+
+
+<h2 id="content">Content</h2>
+<h3>Column titles</h3>
+<ul>
+  <li>Column titles should stick to one or two words that describe the data in that column.</li>
+  <li>two words that describe the data in that column.
+    In cases where a column title is too long, wrap the text to two lines and then truncate the rest of the text. The full text should be shown in a tooltip on hover.</li>
+    <li>Column titles should use sentence-case capitalization.</li>
+</ul>
+
+
+<h2 id="behaviors">Behaviors</h2>
+
+<h3>Interaction</h3>
+<div class="d-flex flex-column my-5">
+  <img width="100%" src="components/grid/images/hover.svg">
+  <div>Hover row</div>
+  <hr>
+  <img width="100%" src="components/grid/images/selected.svg">
+  <div>Selected row</div>
+</div>
+
+<h3>Columns width</h3>
+<p>
+  Columns can be resized draggin the right header separator line.
+</p>
+
+<h3>Search</h3>
+
+    <h6>Collapsed search</h6>
+    <img  src="components/grid/images/search.svg">
+      <p>A search field can be triggered through an icon button in the data table toolbar. </p>
+
+    <h6>Open search</h6>
+    <img width="100%" src="components/grid/images/open-search.svg">
+      <p>The search field can appear always open on a data table. The field is placed on the left side of the table.</p>
+
+
+
+
+<h3>Sorting</h3>
+<p>
+  Columns can be sorted in ascending or descending order. Sorting controls are located in the column headers and indicated with an arrow icon on hover and when a column has been sorted.
+</p>
+
+
+<h3>Pagination</h3>
+<p>Pagination indicates the showed results and the total items in grid. By default grid uses infinite scroll.</p>
+<p>
+  The pagination component is always placed at the bottom of the data table
+</p>
+
+<h3>Content in cell</h3>
+<p>
+  Columns can be sorted in ascending or descending order. Sorting controls are located in the column headers and indicated with an arrow icon on hover and when a column has been sorted.
+</p>
