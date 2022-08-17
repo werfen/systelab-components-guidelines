@@ -137,6 +137,11 @@
     margin-bottom: 1rem;
 }
 
+.layout__content >  p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
 .layout__content > h1 {
     margin-bottom: 1rem;
 }
@@ -148,6 +153,7 @@
 
 .layout__content > h3 {
     margin-top: 2rem;
+    margin-bottom: .5rem;
 }
 
 .layout__content > .do-dont-row {
