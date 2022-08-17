@@ -256,3 +256,8 @@ hint.warning {
 .u-gap-y-2 {
     row-gap: 2rem;
 }
+
+.u-sticky {
+    position: sticky;
+    top: 110px;
+}
