@@ -3,7 +3,9 @@
     <div>
         <img width="100%" src="components/dialog/images/dialog.png">
     </div>
-    <h2 id="principles">Principles</h2>
+
+    <h2 id="overview">Overview</h2>
+
     <p>
         A dialog is a modal window that appears in front of app content to provide critical information or ask for a decision.
     </p>
@@ -30,7 +32,46 @@
         </ul>
     </p>
     
+    <h3>Styles</h3>
+
+    <div class="row">
+        <div class="col-12 col-sm-4">
+            <h6>Title</h6>
+            <p>The title summarizes the purpose of the modal. In a confirmation modal, use a question in your title and make sure the action is clearly called out in the buttons.</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <h6>Content</h6>
+            <p>The content may differ between different types of modals. Be concise and provide a clear explanation of the task or information a user should focus on.</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <h6>Buttons</h6>
+            <p>Buttons should include clear and direct action for the user to take. Buttons are right-aligned based on the Z Pattern.</p>
+        </div>
+    </div>
+    
+    <h3>Stacking dialogs</h3>
+
+    <hint>Dialogs shouldn’t launch other dialogs.</hint>
+    <p>
+        Stacking dialogs makes it hard to dismiss them and confuses the user on their levels of importance.
+    </p>
+    
+    If you see a need to stack dialogs, you should:
+    <ul>
+        <li>
+            Seek alternatives to the second modal such as inline expansion within the first one.
+        </li>
+        <li>
+            Seek alternatives to the use of dialogs in that scenario and explore alternatives such as inline task completion.
+        </li>
+    </ul>
+    
+    
+
+
     <h2 id="anatomy">Anatomy</h2>
+    
+
     <div class="row">
         <div class="col-3">
             <img src="components/dialog/images/container-scrim.png">
