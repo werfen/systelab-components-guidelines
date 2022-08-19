@@ -149,10 +149,11 @@
 .layout__content > h2 {
     scroll-margin-top: 2.5em;
     margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
 
 .layout__content > h3 {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: .5rem;
 }
 
@@ -166,8 +167,10 @@
 }
 
 .layout__content > .do-dont-row img{
+    max-width: 100%;
     width: 100%;
     margin-bottom: .5rem;
+    object-fit: scale-down;
 }
 
 .layout__content > .do-dont-row .do,
