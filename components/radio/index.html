@@ -1,13 +1,15 @@
-<h1>Radio button</h1>
+<h1>Radio Button</h1>
 <p>Radio buttons allow users to select one option from a set.</p>
 
-<div class="d-flex justify-content-center">
-    <img src="components/radio/images/radio.png">
+<div class="d-flex justify-content-center mt-5">
+    <img src="components/radio/images/radio-group.svg">
 </div>
-<h2 id="usage">Usage</h2>
 
-<p>Use radio buttons to:</p>
 
+<h2 id="overview">Overview</h2>
+
+
+<h3>When to use</h3>
 <ul>
     <li>Select a single option from a list</li>
     <li>Expose all available options</li>
@@ -18,39 +20,94 @@
 
 <hint>Visually present groups of choices as groups, and clearly separate them from other groups on the same page.</hint>
 
-<h2 id="principles">Principles</h2>
-
-<h3>Familiar</h3>
-<p>Radio buttons have been in user interfaces for a long time and should be used as expected.</p>
 
 
-<h3>Scannable</h3>
-<p>It should be visible at a glance if a radio button has been selected, and selected items should be more visually prominent than unselected items.</p>
+<h3>When not to use</h3>
+<p>
+    If a user can select many options from a list, use checkboxes instead of radio buttons. Radio buttons allow the user to select only one item in a set whereas checkboxes allow the user to select multiple options.
+</p>
+<hint>
+    Don't use radio buttons when multiple items can be selected.
+</hint>
 
 
-<h3>Efficient</h3>
-<p>Radio buttons make it easy to compare available options.</p>
 
 <h2 id="anatomy">Anatomy</h2>
+<div class="d-flex justify-content-center mb-5">
+    <img src="components/radio/images/anatomy.svg">
+</div>
+<div><b>1. Button/box:</b> Labels describe the meaning of input fields.</div>
+<div><b>2. Label:</b>
+    Text that represents the chosen option. Text should always be present at the right. Users select an option by clicking on either the button/box itself or its label
+    
+</div>
+<div><b>3. Assistance (optional):</b> Any help that explains how to fill out the form. It make sense when use more than one choices</div>
 
-<p>A radio button contains the following elements:</p>
-<h3>Button/box</h3>
-<p>Comprised of a set of clickable circles (the inputs).</p>
-<h3>Label</h3>
-<p>Text that represent the chosen option. Text should be always present at the right</p>
-
-<p>Users select an option by clicking on either the button/box itself or its label</p>
 
 
 <h2 id="layout">Layout</h2>
 
-<p>Lay out your lists vertically, with one choice per line. If you must use a horizontal layout with multiple options per line, make sure to space the buttons and labels so that it's abundantly clear which choice goes with which label.</p>
+<p>Layout your lists vertically, with one choice per line.</p>
+<div class="d-flex justify-content-center py-5">
+    <img src="components/radio/images/vertical.svg">
+    
+</div>
+
+<p>
+    If you must use a horizontal layout with multiple options per line, make sure to space the buttons and labels so that it's abundantly clear which choice goes with which label.
+</p>
+<div class="d-flex justify-content-center align-items-center py-5">
+    <img src="components/radio/images/inline.svg">
+</div>
+<h3>Error state</h3>
+<div class="d-flex justify-content-center align-items-center py-5">
+    <img  src="components/radio/images/error-vertical.svg">
+</div>
+
+
+<h2 id="placement">Placement</h2>
+<p>
+    The radio button component is often used in forms.
+</p>
+<div class="row">
+    <div class="col-12 col-sm-4">            
+        <img src="components/radio/images/form.svg">
+        <p>Forms can be placed on a full page</p>
+    </div>
+    <div class="col-12 col-sm-4">
+        <img src="components/radio/images/modal.svg">
+        <p>In a modal</p>
+    </div>    
+    <div class="col-12 col-sm-4">
+        <img src="components/radio/images/dropdown.svg">
+        <p>In a side panel (dropdown). A radio button can also be used for changing settings in a menu or selecting a singular item in a data table.</p>
+    </div>    
+</div>
+
+
+
+<div class="do-dont-row">
+    <div>
+        <img class="do" src="components/radio/images/wrap-do.svg">
+        <div>Do let text wrap beneath the radio button so the control and label are top aligned.</div>
+    </div>
+    <div>
+        <img class="dont" src="components/radio/images/wrap-dont.svg">
+        <div>Do not vertically center wrapped text with the radio button.
+        </div>
+    </div>
+</div>
+<hint>
+    Avoid multiline labels in inline layout
+</hint>
+
+
+
+
 
 <h2 id="options">Options</h2>
-
-<p>Because radio buttons require exactly one choice, make sure that the options are both comprehensive and clearly distinct.</p>
-
-<p>Use positive and active wording for checkbox labels, so that it's clear what will happen if the user turns on the checkbox. In other words, avoid negations such as "Don't send me more email," which would mean that the user would have to check the box in order for something not to happen.
-
-<p>If users might need to refrain from making a selection, you should provide a radio button for this choice, such as one labeled "None." Offering users an explicit, neutral option to click is better than requiring the implicit act of not selecting from the list, especially because doing the latter violates the rule of always having exactly one option chosen.</p>
-
+<ul>
+    <li>Because radio buttons require exactly one choice, make sure that the options are both comprehensive and clearly distinct.</li>
+    <li>Use positive and active wording for checkbox labels, so that it's clear what will happen if the user turns on the checkbox. In other words, avoid negations such as "Don't send me more email," which would mean that the user would have to check the box in order for something not to happen.</li>
+    <li>If users might need to refrain from making a selection, you should provide a radio button for this choice, such as one labeled "None." Offering users an explicit, neutral option to click is better than requiring the implicit act of not selecting from the list, especially because doing the latter violates the rule of always having exactly one option chosen.</li>
+</ul>

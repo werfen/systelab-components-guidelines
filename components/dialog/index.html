@@ -1,17 +1,20 @@
     <h1>Dialog</h1>
     <p>Dialogs inform users about a task and can contain decisive information that requires immediate attention.</p>
-    <div>
-        <img width="100%" src="components/dialog/images/dialog.png">
+    
+    <div class="d-flex justify-content-center my-5">
+        <img src="components/dialog/images/dialog.svg">
     </div>
-    <h2 id="principles">Principles</h2>
+    
+
+
+
+    
+    <h2 id="overview">Overview</h2>
+
     <p>
-        A dialog is a modal window that appears in front of app content to provide critical information or ask for a decision.
-    </p>
-    <p>
-        Dialogs disable all app functionality when they appear, and remain on screen until confirmed, dismissed, or a required action has been taken.
-    </p>
-    <p>
-        Dialogs are purposefully interruptive, so they should be used sparingly. A less disruptive alternative is to use a menu, which provides options without interrupting a user’s experience.
+    A dialog is a "conversation" between the system and the user.
+    It is prompted when the system needs input from the user or to give the user urgent information concerning their current workflow.
+    There are two types of dialogs, modal and non-modal.
     </p>
     
     <p>
@@ -30,7 +33,46 @@
         </ul>
     </p>
     
+    <h3>Styles</h3>
+
+    <div class="row">
+        <div class="col-12 col-sm-4">
+            <h6>Title</h6>
+            <p>The title summarizes the purpose of the modal. In a confirmation modal, use a question in your title and make sure the action is clearly called out in the buttons.</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <h6>Content</h6>
+            <p>The content may differ between different types of modals. Be concise and provide a clear explanation of the task or information a user should focus on.</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <h6>Buttons</h6>
+            <p>Buttons should include clear and direct action for the user to take. Buttons are right-aligned based on the Z Pattern.</p>
+        </div>
+    </div>
+    
+    <h3>Stacking dialogs</h3>
+
+    <hint>Dialogs shouldn’t launch other dialogs.</hint>
+    <p>
+        Stacking dialogs makes it hard to dismiss them and confuses the user on their levels of importance.
+    </p>
+    
+    If you see a need to stack dialogs, you should:
+    <ul>
+        <li>
+            Seek alternatives to the second modal such as inline expansion within the first one.
+        </li>
+        <li>
+            Seek alternatives to the use of dialogs in that scenario and explore alternatives such as inline task completion.
+        </li>
+    </ul>
+    
+    
+
+
     <h2 id="anatomy">Anatomy</h2>
+    
+
     <div class="row">
         <div class="col-3">
             <img src="components/dialog/images/container-scrim.png">
@@ -168,12 +210,15 @@
 
 
 
-    <h2 id="scrolling">Scrolling</h2>
-    <p>Most dialog content should avoid scrolling. Even when scrolling is required, the dialog title is pinned at the top, with buttons pinned at the bottom. This ensures selected content remains visible alongside the title and buttons, even upon scroll.
-    </p>
-    <p>Dialogs don’t scroll with elements outside of the dialog, such as the background.</p>
+    <h2 id="overflow-content">Overflow content</h2>    
+        <p>
+        When the modal content is longer than the modal height then the body section should scroll vertically with the header and footer remaining fixed in place. The scroll bar will appear to indicate there is additional content out of view.
+        </p>
 
-
+    <hint>
+        Modal content should never scroll horizontally; instead, use a larger size modal.
+      </hint>
+      
 
     <h2 id="dismissing-dialogs">Dismissing dialogs</h2>
     <p>
@@ -185,4 +230,10 @@
         </ul>
         If the user’s ability to dismiss a dialog is disabled, the user must choose a dialog action to proceed.
     </p>
+
+
+
+
+    <h2 id="content">Content</h2>
+
 

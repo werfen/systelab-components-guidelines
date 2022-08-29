@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Systelab Components Guidelines</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/reset.css">
+        
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://use.fontawesome.com/88b89c3f4b.js"></script>
+
+        <script src="js/includeHtml.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div include-html="header.html"></div>
+        <div class="layout">
+            <div class="layout__navigation">
+                <div id="mainmenu" class="mainmenu" include-html="navigation.html"></div>
+            </div>
+            <div>
+                <div class="layout__content" id="component-content">
+                    <div class="loading"></div>
+                </div>
+                <div include-html="footer.html"></div>
+            </div>
+            <div class="layout__scrollspy">
+                <div class="content__scroll-spy u-sticky" id="content__scroll-spy"></div>
+            </div>
+        </div>
+        <script>
+            if(window.location.search) {
+                var pathComponent = window.location.search.replace('?','');
+                var element = document.getElementById('component-content');
+				element.setAttribute('include-html', pathComponent);
+            } else {
+                var element = document.getElementById('component-content');
+				element.setAttribute('include-html', 'welcome.html');
+            }
+            
+            includeHTML();
+        </script>
+    </body>
+</html>

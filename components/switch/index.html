@@ -1,20 +1,79 @@
 <h1>Switch</h1>
-<p>Switches are the preferred way to adjust settings. They're used to control binary options: think On/Off or True/False.</p>
-<h2 id="principles">Principles</h2>
-<p>
-    Use switches to:
+<p>A toggle is used to quickly switch between two possible states. They are commonly used for "on/off" switches.</p>
+
+
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/switch/images/checked.svg">
+        <div>Switch checked</div>
+    </div>
+    <div>
+        <img class="info" src="components/switch/images/unchecked.svg">
+        <div>Switch checked</div>
+    </div>
+</div>
+
+
+<h2 id="overview">Overview</h2>
+<p>Switch is a control that is used to quickly switch between two possible states. Toggles are only used for these binary actions that occur immediately after the user "flips the switch". They are commonly used for "on/off" switches.
+    </p>
+<h3>When to use</h3>
 <ul>
     <li>Toggle a single item on or off</li>
     <li>Immediately activate or deactivate something</li>
 </ul>
 
 <h2 id="anatomy">Anatomy</h2>
-<p>A switch is composed by a track and a thumb and a mandatory label text.</p>
+
 <h3>Label text</h3>
-<p>Switches should always be paired with an inline label describing the option that the switch controls, as well as its state.</p>
-<p>Label shoud be paced in the left.</p>
+<p>
+    Use labels with a toggle so the action is clear. Labels should be three words or less and appear on the side of a toggle.
+</p>
+<hint>
+    You only could use a switch without a label when it is placed in a data grid. In this case the label will be the table header column.
+</hint>
+
+<h3>Track</h3>
+<p>
+    Change background color when is checked (primary color) or unchecked (white color)
+</p>
+
+<h3>Thumb</h3>
+<p>
+    Change background color when is checked (primary color) or unchecked (white color)
+</p>
+
+
+
 <h2 id="placement">Placement</h2>
-<p>Switches are often arranged in stacked layouts.</p>
+<p>Switches are often arranged in stacked layouts, otherwise they can also be used independently either in status bars, cards or to activate and deactivate entire sections in complex forms.</p>
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/switch/images/form.svg">
+        In forms (vertical or horizontal layout)
+    </div>
+    <div>
+        <img class="info" src="components/switch/images/table.svg">
+        In data grids
+    </div>
+    <div>
+        <img class="info" src="components/switch/images/alone.svg">
+        Alone
+    </div>
+
+        
+</div>
+
+
+<h3>In vertical layout form</h3>
+<div class="d-flex justify-content-center my-5">
+    <img src="components/switch/images/vertical.svg">
+</div>
+<h3>In horizontal layout form</h3>
+<div class="d-flex justify-content-center my-5">
+    <img src="components/switch/images/horizontal.svg">
+</div>
+
 
 <h2 id="behaviour">Behaviour</h2>
 <p>A switch is successfully toggled when the switch thumb slides to the other side of the track upon user interaction.

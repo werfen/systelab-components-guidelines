@@ -42,7 +42,7 @@ function includeHTML() {
       var linkText = document.createTextNode(element.innerHTML);
       a.appendChild(linkText);
       a.title = element.innerHTML;
-      var hash = element.innerHTML.replace(" ","-").toLowerCase()
+      var hash = element.innerHTML.replaceAll(" ","-").toLowerCase()
       a.href = "#"+hash;
       
       if((index===0 && !window.location.hash) || window.location.hash.replace("#","")===hash){
@@ -55,6 +55,8 @@ function includeHTML() {
       document.getElementById('content__scroll-spy').appendChild(a);
     })
 
+    let searchInput = document.getElementById('searchbox');
+    searchInput.addEventListener('keyup', liveSearch);
 }
 
 function selectLink(event) {
@@ -67,3 +69,17 @@ function selectLink(event) {
 }
 
 
+function liveSearch() {
+  let options_menu = document.querySelectorAll('.mainmenu ul li')
+  let search_query = document.getElementById("searchbox").value;
+
+  options_menu.forEach(element => {
+    if(element.innerText.toLowerCase()
+      .includes(search_query.toLowerCase()))
+    {
+      element.classList.remove("d-none");
+    } else {
+      element.classList.add("d-none");
+    }
+  });
+}

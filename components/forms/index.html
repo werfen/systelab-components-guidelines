@@ -1,0 +1,222 @@
+<h1>Forms</h1>
+<p>
+  Forms are a grouping of input controls that allow a user to submit information to your application.
+</p>
+
+<h2 id="overview">Overview</h2>
+<p>
+  Forms are comprised of text and input components such as checkboxes, comboboxes, input fields, radio buttons, and toggle switches. The easier users can complete forms, the better your response rates will typically be. Forms should be clear, concise, and relevant to its context.
+</p>
+
+<h2 id="form-layouts">Form layouts</h2>
+<p>
+  Systelab components offer two types of forms: horizontal (our recommended default) and vertical.
+</p>
+
+
+
+
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <img src="components/forms/images/horizontal-do.svg" class="mb-4">        
+          
+          <h6>Horizontal</h6>
+          Horizontal formats are good for the quick scanning of labels, and can be used in cases of limited vertical space. The space between label and input however can slow users down.
+          
+
+  </div>
+  <div class="col-12 col-sm-6">
+    <img src="components/forms/images/vertical-do.svg" class="mb-4">     
+      <h6>Vertical</h6>
+      This option is better for scanning, mobile experiences, accessibility, and localization. While it offers better completion rates, it is less ideal for longer forms.
+      
+  </div>     
+</div>
+<br>
+<h3>Horizontal example:</h3>
+<hr>
+<div class="d-flex justify-content-center my-5">
+  <img src="components/forms/images/horizontal.svg">      
+</div>
+<h3>Vertical example</h3>
+<hr>
+<div class="d-flex justify-content-center my-5">
+  <img src="components/forms/images/vertical.svg">      
+</div>
+
+<div class="do-dont-row">
+  <div>
+      <img class="dont" src="components/forms/images/full-vertical-dont.svg">
+      <div>Avoid forms with 100% width in vertical layout.</div>
+  </div>
+  <div>
+      <img class="dont" src="components/forms/images/full-horizontal-dont.svg">
+      <div>Avoid forms with 100% width in horizontal layout.</div>
+  </div>  
+</div>
+<hint>
+  The form container must be limited to a maximum width of 750px.
+</hint>
+
+
+
+
+
+
+<h5>Depending on the screen on which we have to use the form we have three layouts.</h5>
+<div class="row">
+  <div class="col-3">
+      <img  src="components/forms/images/inline.svg">
+  </div>
+  
+  <div class="col-9">
+    <h5>Inline</h5>
+    <p>Used in small forms when scroll is not necessary.</p>
+  </div>
+      
+</div>
+<div class="row">
+  <div class="col-3">
+    <img  src="components/forms/images/modal.svg">
+  </div>
+  <div class="col-9">
+    <h5>Modal</h5>
+    <p>Used in most cases of the forms. It has the actions buttons always visible and allows huge forms.</p>
+  </div>   
+</div>
+
+<div class="row">
+  <div class="col-3">
+    <img  src="components/forms/images/modal-sidebar.svg">
+  </div>
+  <div class="col-9">
+    <h5>Overlay sidebar</h5>
+    <p>When we need to use a contextualized form like configuration form we can use this style form. It prevents the focus loss if the screen is not modal.</p>
+  </div>   
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="do-dont-row">
+  <div>
+      <img class="dont" src="components/forms/images/multicolumn-dont.svg">
+      <div>Avoid forms with more than one column.</div>
+  </div>
+  <div>
+      <img class="dont" src="components/forms/images/label-space-done.svg">
+      <div>Do not space the label and the input</div>
+  </div>  
+</div>
+
+
+
+
+
+
+
+<h2 id="anatomy">Anatomy</h2>
+
+<p>
+  The typical form has following five components:
+</p>
+
+<div class="d-flex justify-content-center my-5">
+  <img src="components/forms/images/structure.svg">
+</div>
+<div><b>1. Field labels:</b> Labels describe the meaning of input fields.</div>
+<div><b>2. Assistance:</b> Any help that explains how to fill out the form.</div>
+<div><b>3. Input fields:</b> Different types of input fields including text fields, password fields, check boxes, radio buttons, sliders</div>
+<div><b>4. Validation:</b> Automatic check that ensures that the user’s data is valid.</div>
+<div><b>5. Action buttons:</b> When a user presses the button, the action is performed (such as submitting the data).</div>
+<br>
+<h3>
+  Feedback
+</h3>
+<p>
+
+Visual feedback helps users understand the result of operation.
+Most apps in Systelab components use messages as a form of visual feedback. Messages notify the user about result, they can be positive (indicating that the form was submitted successfully) or negative (indicating that the data provided by a user required modification).
+</p>
+
+ 
+<h3>Spacing elements</h3>
+<div class="d-flex justify-content-center my-5">
+  <img src="components/forms/images/space-elements.svg">
+</div>
+
+
+
+
+
+
+<h2 id="complex-forms">Complex forms</h2>
+<h3>Grouping elements</h3>
+<p>
+  You should group related information in logical blocks or sets. Grouping related fields together also helps users make sense of the information that they must fill in. 
+</p>
+<hint>
+  In a large forms you can do the group fields collapsible (optional)
+</hint>
+
+<div class="d-flex justify-content-center my-5">
+  <img src="components/forms/images/group.svg">
+</div>
+
+<h3>Contextual actions</h3>
+<p>
+  In some forms you need to use a combination of multiple contextual actions. You can add context action with the link-button in the group section or in a specific field. 
+</p>
+
+<div class="d-flex justify-content-center my-5">
+  <img src="components/forms/images/complex.svg">
+</div>
+
+<h3>Spacing elements</h3>
+<div class="d-flex justify-content-center my-5">
+  <img src="components/forms/images/space-elements-complex.svg">
+</div>
+
+
+
+
+<h2 id="validation-and-errors">Validation and errors</h2>
+<h3>Form validation</h3>
+<p>
+  We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
+</p>
+<p>
+The validation should appear when the user has clicked away from the text field. Once the user corrects the errors within the text field, the validation should disappear once the data is rendered as valid.
+</p>
+<p>
+The validation label below the field should be as informative as possible when describing the issue with the users data.
+</p>
+
+<h3>Error message content</h3>
+  <p>
+Humanize the error messaging as much as possible. The content should provide clear guidance on how to fix the error. Avoid unrecognizable system error messages like "code 500 error".
+
+You may also consider using more than one error message when helpful. For example, if an email address input field has an error, consider either showing “please enter an email address” for a blank field, or “email address needs an ’@’ symbol followed by a domain” for an invalid symbol.
+</p>
+
+</h3>
+
+<h3>Optional versus required fields</h3>
+<p>
+  When designing your form, consider the purpose and the use case, and note if the majority of the fields are required or optional.
+</p>
+<ul>
+  <li>If the majority of the fields are required, mark <b>only</b> the optional fields with (optional).</li>
+  <li>If the majority of the fields are optional, mark <b>only</b> the required fields  with (required).</li>
+</ul>
+
+

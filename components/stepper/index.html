@@ -1,0 +1,66 @@
+<h1>Stepper</h1>
+<p>An input stepper is a two-segment UI control used to incrementally increase or decrease a numeric value.</p>
+<div class="d-flex justify-content-center my-5">
+    <img src="components/stepper/images/stepper.svg">
+</div>
+
+
+<h2 id="overview">Overview</h2>
+<p>Steppers work well for fields that have one commonly entered value and most other input values deviate only slightly from that. If there is a lot of variability in the range of values that users normally enter for a field (e.g., for age or date of birth), a stepper is not appropriate.</p>
+<p>Set the most frequently selected value as a stepper default.</p>
+<p>Avoid steppers for continuous quantities. By design, stepper fields can only take discrete values — that is, multiples of the step increment. (You cannot specify 1.5 items for a quantity stepper.) Sometimes, it makes sense to transform continuous variables into discrete ones (for example, we usually treat age as a discrete variable, counted in years).</p>
+
+<h3>When to use</h3>
+
+<ul>
+  <li>
+    The numeric field has a most commonly selected value and most users will not deviate insignificantly from it (e.g.e.g., dose amount).
+  </li>
+  <li>
+    The numeric field needs to be adjusted by a small, discrete amount or precision is not important (e.g., number of bedrooms).	
+  </li>
+  <li>
+    There is enough room for generous spacing of the stepper segments.	
+  </li>
+</ul>
+
+<h3>When not to use</h3>
+
+<ul>
+  <li>
+    The numeric field can take a wide range of values (e.g., age), with no one value being entered significantly more often than others.
+  </li>
+  <li>
+    The numeric field is continuous and the exact value is important.
+  </li>
+  <li>
+    Limited design space for button layout would make the stepper segments small or cramped.
+  </li>
+</ul>
+
+
+
+<hint class="warning"> In many situations, transforming a continuous variable (such as prices or distances) into a discrete one with the wrong step can be irritating or inappropriate for the user task.</hint>
+
+
+
+<h2 id="anatomy">Anatomy</h2>
+
+<p>A stepper contains the following elements:</p>
+
+<h6>Minus Button</h6>
+Decrease the value.
+<hr>
+<h6>Value</h6>
+Current selected value
+<hr>
+<h6>Plus Button</h6>
+Increase the value.
+<hr>
+<h6>Units (Optional)</h6>
+Always on the right to define the units of the value.
+<p><img class="mt-3" src="components/stepper/images/stepper-units.svg"></p>
+
+<hint>You should make the step and the unit explicit  (e.g., days, cents, percentage). Also, if the input value has a maximum or minimum limit, be sure to indicate it. It is usually best to have a stepper change the current value by a step of one unit per button-press, but there can be cases where other step values are more appropriate, if indicated by a task analysis.</hint>
+
+

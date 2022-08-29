@@ -1,0 +1,17 @@
+<svg width="800" height="530" viewBox="0 0 800 530" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 530H800V0H0V530Z" fill="#D1D1D1"/>
+<path d="M0 20H800V0H0V20Z" fill="#DFDFDF"/>
+<path d="M0 50H800V20H0V50Z" fill="#171717"/>
+<rect x="27" y="78" width="747" height="424" fill="white"/>
+<rect x="648" y="449" width="106" height="38" rx="19" fill="#0064D1"/>
+<rect x="663" y="461" width="79" height="15" fill="white" fill-opacity="0.09"/>
+<rect x="55" y="103" width="308.856" height="10" fill="#686868"/>
+<rect x="55" y="124" width="691" height="32" fill="#D1D1D1"/>
+<rect x="55" y="183" width="308.856" height="10" fill="#686868"/>
+<rect x="55" y="204" width="691" height="32" fill="#D1D1D1"/>
+<rect x="55" y="263" width="308.856" height="10" fill="#686868"/>
+<rect x="55" y="284" width="691" height="32" fill="#D1D1D1"/>
+<rect x="55" y="343" width="308.856" height="10" fill="#686868"/>
+<rect x="55" y="364" width="691" height="32" fill="#D1D1D1"/>
+<rect x="27" y="435" width="747" height="1" fill="#D1D1D1"/>
+</svg>

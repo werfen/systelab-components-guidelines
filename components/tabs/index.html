@@ -1,0 +1,148 @@
+<h1>Tabs</h1>
+<p> 
+    Tabs are used to organize related content. They allow the user to navigate between groups of information that appear within the same context.
+</p>
+
+
+<h2 id="overview">Overview</h2>
+<p>
+    Tabs are used to group different but related content, allowing users to navigate views without leaving the page. They always contain at least two items and one tab is active at a time. Tabs can be used on full page layouts or in components such as modals, cards, or side panels.
+</p>
+
+<div class="d-flex justify-content-center  items-align-center  my-5">
+    <img src="components/tabs/images/tab-line.svg" class="mb-4">
+</div>
+
+
+
+
+<h3>When to use</h3>
+<ul>
+    <li>Use tabs to group related information into different categories, helping to reduce cognitive load.</li>
+    <li>Tabs can be used to organize content such as forms, settings, and dashboards so a user does not have to navigate away from their workflow to complete their task.</li>
+</ul>
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/tabs/images/contained.svg">
+    </div>
+    <div>
+        <img class="info" src="components/tabs/images/contained-vertical.svg">
+        Vertical tabs
+    </div>
+    <div>
+        <img class="info" src="components/tabs/images/line.svg">
+    </div>
+    
+    <div>
+        <img class="info" src="components/tabs/images/line-sidebar.svg">
+        In sidebars, panels or modals
+    </div>
+    
+        
+</div>
+
+<h3>When not to use</h3>
+<ul>
+    <li>Tabs should never be used for primary navigation. If tabs become too complex, consider using a standard navigation pattern</li>
+    <li>Tabs should not be used to indicate progress. Use the progress indicator instead.</li>
+    <li>Tabs should not be used if the user is comparing information in two groups, as this would result in the user having to click back and forth to complete a task.</li>
+</ul>
+
+
+<h2 id="variants">Variants</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Variant</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <b>Line</b>
+        </td>
+        <td>A standalone tab that can also be nested within components. It is commonly used within components or for content using the entire page for layout, not connected to any other components.</td>
+      </tr>
+      <tr>
+        <td>
+            <b>Contained</b>
+        </td>
+        <td>An emphasized tab that is always attached to a background container. It is commonly used for defined content areas, like sub-pages or attached to cards. </td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  
+
+
+<div class="do-dont-row">
+    
+    <div>
+        <img class="info" src="components/tabs/images/tab-line.svg">
+        <div>Line</div>
+    </div>
+    <div>
+        <img class="info" src="components/tabs/images/tab-contained.svg">
+        <div>Contained</div>
+    </div>
+</div>
+
+
+
+<h2 id="anatomy">Anatomy</h2>
+
+<div class="d-flex justify-content-center my-5">
+    <img src="components/tabs/images/anatomy.svg">
+</div>
+
+<div><b>1. Label:</b> should clearly communicate the view users will see and the content contained in the view</div>
+<div><b>2. Indicator:</b> Indicate to the user the selected tab.</div>
+<div><b>3. Icon (optional):</b>We use an icon to attract the user's attention, eg: the warning-icon notice to the user that has to do something on the tab content.</div>
+
+<hint>
+    Use short tab labels that are clear and specific. Labels should be one to two words, as these are easier to scan.
+</hint>
+<h2 id="Formatting">Formatting</h2>
+
+<h3>Auto-width</h3>
+<p>
+    With both line tabs and contained tabs, auto-width is the default behavior. Each tab will be a different size depending on the label’s character count but will have consistent padding on each side of the label.  If needed, you may also use a line to help balance tabs with other components on the page.
+</p>
+
+
+<h3>Alignment</h3>
+<p>
+    Much like buttons, alignment of tabs depends on where they appear and whether or not they’re contained within another component. As a general rule, the first label for both line tabs and contained tabs align with the grid and the text below. If tabs are within another component, such as a card, follow the grid that you are using inside the component and align the label with text in the component.
+</p>
+<div class="do-dont-row">
+    <div>
+        <img class="do" src="components/tabs/images/do.svg">
+        Do align tab labels with the grid
+    </div>
+    <div>
+        <img class="dont" src="components/tabs/images/dont.svg">
+        Do not align tab container with the grid
+    </div>        
+</div>
+
+
+<h3>Alignment within a component</h3>
+<p>
+    When using line tabs within a component (like a modal) the first label should always align to the other content in the space. Do not use contained tabs. The edges of the line tab may also bleed to the edges of the space if needed depending on the container’s margins. To add hierarchical clarity and balance the tabs with the other content, a line may be added from the end of the last tab to the edge of the content area.
+</p>
+<div class="d-flex justify-content-center items-align-center my-5">
+    <img width="100%" src="components/tabs/images/component-alignment.svg">
+    
+</div>
+
+
+
+
+
+
+
+
+
