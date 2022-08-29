@@ -15,41 +15,306 @@
 
         <link rel="stylesheet" href="css/reset.css">
         
-
-        <link rel="stylesheet" href="css/main.css">
-        <script src="https://use.fontawesome.com/88b89c3f4b.js"></script>
-
-        <script src="js/includeHtml.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div include-html="header.html"></div>
         <div class="layout">
-            <div class="layout__navigation">
-                <div id="mainmenu" class="mainmenu" include-html="navigation.html"></div>
+            <div class="header">
+                <a href="index.html"><img src="images/logo.svg"></a>
             </div>
-            <div>
-                <div class="layout__content" id="component-content">
-                    <div class="loading"></div>
+            
+            <div class="splash">
+                <div class="u-gap-6 container d-flex align-items-center">
+                    <div>
+                        <h1><span class="font-weight-light">Design</span>, <span class="font-weight-normal">develop</span>, <span class="font-weight-bold">deliver</span></h1>
+                        <h2 class="splash-content__subtitle">Use Werfen end-to-end design system to create simple, intuitive and beautiful experiences.</h2>
+                    </div>
+                    <div>
+                        <img src="/images/welcome/cover.svg">
+                    </div>
                 </div>
-                <div include-html="footer.html"></div>
             </div>
-            <div class="layout__scrollspy">
-                <div class="content__scroll-spy u-sticky" id="content__scroll-spy"></div>
+            
+            <div class="highlights container py-5">
+                <div class="row">
+                    <div class="col-3">
+                      <h3 class="font-weight-bold">Styles</h3>
+                      <p>
+                        Styles are the visual elements needed to create engaging layouts and end-to-end user experiences.
+                      </p>
+                    </div>
+                    <div class="col-9 hightlight-grid">
+                        
+                        <a class="compoment-card" href="content.html?components/color-system">
+                            <div>Color system</div>
+                            
+                            <p>Colors affect all the parts of the system, so you have to organize them first.</p>
+                        </a>    
+                        <a class="compoment-card" href="content.html?components/spacing">
+                            Spacing
+                            <p>Provides tokens to take the guesswork out of spacing and help deliver clear, functional layouts</p>
+                        </a>    
+                        
+
+                        
+                        <a class="compoment-card" href="content.html?components/icons">
+                            Icons
+                            <p>Iconography is a powerful visual cue to the user and should reflect our particular sense of style.</p>
+                        </a>
+                        <a class="compoment-card" href="content.html?components/typography">
+                            Typography
+                            <p>
+                                Typography creates purposeful texture, guiding users to read and understand the hierarchy of information.
+                            </p>
+                        </a>    
+                        
+                    </div>
+                  </div>
+                  <hr class="my-5">
+                  <div class="row">
+                    <div class="col-3">
+                      <h3 class="font-weight-bold">Compoments</h3>
+                      <p>
+                        Styles are the visual elements needed to create engaging layouts and end-to-end user experiences.
+                      </p>
+                    </div>
+                    <div class="col-9 hightlight-grid">
+                            <a class="compoment-card" href="content.html?components/button">
+                                Button
+                                <p>
+                                    Buttons allow an application to communicate action and direct user intent.
+                                </p>
+                            </a>    
+                            <a class="compoment-card" href="content.html?components/combobox">
+                                Combobox 
+                                <p>
+                                    The combobox component allows users to choose one option from a list. It is used in forms for users to submit data.
+
+
+                                </p>
+                            </a>    
+                            
+                            <a class="compoment-card" href="content.html?components/form">
+                                Form 
+                                <p>
+                                    Forms are a grouping of input controls that allow a user to submit information to your application.
+
+
+                                </p>
+                            </a>
+                            <a class="compoment-card" href="content.html?components/dialog">
+                                Dialog
+                                <p>
+                                    Dialogs inform users about a task and can contain decisive information that requires immediate attention.
+
+
+                                </p>
+                            </a>    
+                            <a class="compoment-card" href="content.html?components/tabs">
+                                Tabs
+                                <p>
+                                    They allow the user to navigate between groups of information that appear within the same context
+                                </p>
+                            </a>    
+                        
+                    </div>
+                  </div>
+                
+            </div>
+            
+        </div>
+        
+
+
+
+
+        <div class="container py-5">
+            <div class="text-center">
+                <h2 >Resources</h2>
+                <p class="mt-2">A collection of tools, kits, plugins and guides to help simplify the creation process for our users.</p>
+            </div>
+            <div class="resoruces-grid mt-5">
+                <a class="compoment-card compoment-card--white" href="https://github.com/systelab/systelab-components">
+                    <img width="42" src="/images/pdf.svg">
+                    Werfen brand guidelines
+                    <p>
+                        This guide provides a practical summary of the fundamental features of the Werfen brand.
+                    </p>
+                </a>  
+                <a class="compoment-card compoment-card--white" href="https://github.com/systelab/systelab-components">
+                    <img width="42" src="/images/pdf.svg">
+                    Logo library
+                    <p>
+                        This guide provides a practical summary of the fundamental features of the Werfen brand.
+                    </p>
+                </a>  
+                <a class="compoment-card compoment-card--white" href="https://github.com/systelab/systelab-components/issues">
+                    <img width="42" src="/images/pdf.svg">
+                    Presentation kit
+                    <p>
+                        This guide provides a practical summary of the fundamental features of the Werfen brand.
+                    </p>
+                </a>  
+                
             </div>
         </div>
-        <script>
-            if(window.location.search) {
-                var pathComponent = window.location.search.replace('?','');
-                var element = document.getElementById('component-content');
-				element.setAttribute('include-html', pathComponent);
-            } else {
-                var element = document.getElementById('component-content');
-				element.setAttribute('include-html', 'welcome.html');
-            }
+
+
+
+        
+        <div class="container py-5">
+            <div class="text-center">
+                <h2 >Contributing to the design system</h2>
+                <p class="mt-2">We encourage any feedback and ideas towards the design system itself as well! If you are interested in contributing, check out our guidelines to get started. Have any questions? Open an issue on our Design System issue tracker. Otherwise, be sure to check out the resources below!</p>
+            </div>
+            <div class="d-flex justify-content-center mt-5 u-gap-6">
+                
+                <a href="https://github.com/systelab/systelab-components">
+                    Explore the repository 
+                </a>  
+                <a href="https://github.com/systelab/systelab-components/issues">
+                    View the issue tracker
+                </a>  
+                <a href="https://github.com/systelab/systelab-components/issues/new/choose">
+                    Add an issue
+                </a>  
+            </div>
+        </div>
+
+
+
+        
+
+
+
+
+
+
+
+
+        <footer class="footer">    
             
-            includeHTML();
-        </script>
+            <div class="container">
+                <p>Powered by <b>Werfen</b>.</p>
+                <p>© 2022 · All rights reserved.</p>
+            </div> 
+        </footer>
+            
     </body>
+
 </html>
+
+
+<style>
+    .layout {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background-color: #FAFBFC;
+        
+    }
+    .splash {
+        background-image: url(images/welcome/grid.svg);
+        background-color: white;
+        padding: 4rem 0;
+    }
+    
+
+    .u-gap-1 {
+        gap: 1rem;
+    }
+
+    .u-gap-6 {
+        gap: 6rem;
+    }
+
+    .splash-content__subtitle {
+        color: var(--gray-dark-color);
+        font-size: 1.8rem;
+    }
+    
+    .compoment-card--white {
+        border: 1px solid #f4f4f4;
+    }
+
+    .compoment-card {
+        background-color: white;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        border-radius: 4px;
+        color: var(--gray-dark-color);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .compoment-card p {
+        font-weight: 200;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: var(--gray-dark-color);
+    }
+
+    .compoment-card:hover {
+        box-shadow: 0 8px 16px -4px rgba(0,0,0,0.25);
+        -webkit-text-decoration: none;
+        text-decoration: none;
+    }
+
+    .hightlight-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    .resoruces-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .resoruces-grid img {
+        width: 38px;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .header {
+        display: flex;
+        padding: 0 1rem;
+        height: 70px;
+        border-bottom: 1px solid var(--gray-light-color);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #FFF;
+        z-index: 10;
+    }
+
+    @media print {
+        .header {
+            position: relative;
+        }
+    }
+
+    .footer {
+        border-top: 1px solid var(--gray-light-color);
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .footer p {
+        line-height: .5rem;
+    }
+    @media (max-width: 1200px) {
+        .footer {
+            padding: 2rem 1.2rem;
+        }
+    }
+
+</style>
+
+
+
+
