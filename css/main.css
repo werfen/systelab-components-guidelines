@@ -174,14 +174,11 @@
 }
 
 .layout__content > .do-dont-row .do,
-.layout__content > .do-dont-row .dont {
-    background-color: #f4f4f4;
-    padding: 2.5rem; 
-}
-
+.layout__content > .do-dont-row .dont,
 .layout__content > .do-dont-row .info {
     background-color: #f4f4f4;
     padding: 2.5rem; 
+    border-radius: 4px;
 }
 
 .layout__content > .do-dont-row .do {
