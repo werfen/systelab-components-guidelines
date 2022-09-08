@@ -176,7 +176,7 @@
 .layout__content > .do-dont-row .do,
 .layout__content > .do-dont-row .dont,
 .layout__content > .do-dont-row .info {
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
     padding: 2.5rem; 
     border-radius: 4px;
 }

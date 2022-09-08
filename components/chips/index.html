@@ -1,0 +1,91 @@
+<h1>Chips</h1>
+
+<p>
+    Chips can show multiple interactive elements together in the same area, such as a list of selectable times. There are four types of chips: input, choice and filter.
+</p>
+
+<div class="d-flex col-12 justify-content-around border p-4 rounded">
+    <div class="text-center">
+        <img src="components/chips/images/input.svg">
+        <div class="mt-2">Input chip</div>
+    </div>
+    <div class="text-center">
+        <img src="components/chips/images/choice-selected.svg">
+        <div class="mt-2">Choice chip</div>
+    </div>
+    <div class="text-center">
+        <img src="components/chips/images/filter-selected.svg">
+        <div class="mt-2">Filter chip</div>
+      </div>
+    </div>
+<h2 id="overview">Overview</h2>
+
+<p>
+    Chips allow users to enter information, make selections or filter content. While buttons are expected to appear consistently and with familiar calls to action, chips should appear dynamically as a group of multiple interactive elements
+</p>
+
+
+<h2 id="types">Types</h2>
+
+<h3>Input choice</h3>
+<p>
+    Input chips represent information used in fields, such as an entity or different attributes. 
+</p>
+<b>Behaivour:</b>
+<ul>
+    <li>You can select multiple choice chip.</li>
+    <li>The chip could be removed by the close icon.</li>
+</ul>
+<div class="bg-light d-flex col-12 justify-content-around border p-4 rounded">
+    <div class="text-center">
+        <img src="components/chips/images/form-example.svg">
+    </div>
+</div>
+
+
+
+<h3>Choice chip</h3>
+<p>
+    In sets that contain at least two options, choice chips represent a single selection.
+</p>
+<b>Behaivour:</b>
+<ul>
+    <li>
+        Selecting a single choice chip automatically deselects all other chips in the set.
+    </li>
+</ul>
+
+<div class="bg-light d-flex col-12 justify-content-around border p-4 rounded">
+    <div class="text-center">
+        <img class="do" src="components/chips/images/choice-example.svg">
+    </div>
+</div>
+
+
+
+<h3>Filter chip</h3>
+<p>
+    Filter chips represent filters for a collection. E.g. used to filter tables, cards or lists. 
+</p>
+
+
+<div class="do-dont-row">
+    <div>
+        <img class="do" src="components/chips/images/filter-example.svg">
+        <div>You can select multiple choice chip.</div>
+    </div>
+    <div>
+        <img class="dont" src="components/chips/images/dont-filter.svg">
+        <div>Don't use a filter chip with only a single option.</div>
+    </div>
+
+  </div>
+
+  <b>States:</b>
+
+  <ul>
+      <li>
+          Choice and filter chips have two states, enabled and selected
+      </li>
+  </ul>
+  
