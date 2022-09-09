@@ -223,9 +223,12 @@ hint.warning {
 .loading {
     background-image: url(../images/loading.svg);
     background-repeat: no-repeat;
-    background-position: 0px 20px;
+    background-position: center center;
     width: 100%;
-    height: 80px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 /* Responsive */
