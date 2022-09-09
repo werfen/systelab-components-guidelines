@@ -24,15 +24,16 @@
             </div>
             
             <div class="splash">
-                <div class="u-gap-6 container d-flex align-items-center">
+                <div class="u-gap-6 container d-flex flex-column flex-lg-row-reverse align-items-center">
+                    <div>
+                        <img src="images/welcome/cover.svg">
+                    </div>
                     <div>
                         <h1><span class="font-weight-light">Design</span>, <span class="font-weight-normal">code</span>, <span class="font-weight-bold">deliver</span></h1>
                         <h2 class="splash-content__subtitle">
                             Use Werfen design system to craft outstanding digital experiences and awesome products.</h2>
                     </div>
-                    <div>
-                        <img src="images/welcome/cover.svg">
-                    </div>
+                    
                 </div>
             </div>
             
@@ -41,9 +42,8 @@
                     <h2 class="font-weight-bold">Styles</h2>
                     <h3 class="text-large mt-2">Styles are the visual elements needed to create engaging layouts and end-to-end user experiences.</h3>
                 </div>
-                <div class="row">
-                        
-                    <div class="col-12 hightlight-grid">
+                
+                    <div class="grid grid-4-layout">
                         
                         <a class="component-card" href="content.html?components/color-system">
                             <div>Color system</div>
@@ -70,14 +70,12 @@
                         
                     </div>
                   </div>
-                  </div>
                 <div class=" container py-4">
                   <div class="my-4">
                     <h2 class="font-weight-bold">Components</h2>
                     <h3 class="text-large mt-2">Components are one of the key building blocks of the design system. Their systematic reuse helps to create visual and functional consistency across products.</h3>
                 </div>
-                  <div class="row">
-                    <div class="col-12 hightlight-grid">
+                    <div class="grid grid-4-layout">
                             <a class="component-card" href="content.html?components/button">
                                 Button
                                 <p>
@@ -115,7 +113,7 @@
                                     They allow the user to navigate between groups of information that appear within the same context
                                 </p>
                             </a>    
-                    </div>
+                   
                   </div>                
             </div>
         
@@ -128,7 +126,7 @@
                 <h2 class="font-weight-bold">Resources</h2>
                 <p class="mt-2">A collection of tools, kits, plugins and guides to help simplify the creation process for our users.</p>
             </div>
-            <div class="resoruces-grid">
+            <div class="grid grid-3-layout">
                 <a class="component-card component-card--white" href="https://github.com/systelab/systelab-components">
                     <img width="42" src="images/pdf.svg">
                     Werfen brand guidelines
@@ -162,12 +160,12 @@
                 <h2 class="font-weight-bold">Contributing to the design system</h2>
                 <p class="mt-2">We encourage any feedback and ideas towards the design system itself as well! If you are interested in contributing, check out our guidelines to get started. Have any questions? Open an issue on our Design System issue tracker. Otherwise, be sure to check out the resources below!</p>
             </div>
-            <div class="d-flex justify-content-center mt-5 u-gap-6">
+            <div class="d-flex flex-column flex-sm-row justify-content-center mt-sm-5">
                 
-                <a href="https://github.com/systelab/systelab-components">
+                <a class="mr-sm-5" href="https://github.com/systelab/systelab-components">
                     Explore the repository 
                 </a>  
-                <a href="https://github.com/systelab/systelab-components/issues">
+                <a class="mr-sm-5" href="https://github.com/systelab/systelab-components/issues">
                     View the issue tracker
                 </a>  
                 <a href="https://github.com/systelab/systelab-components/issues/new/choose">
@@ -258,22 +256,27 @@
         text-decoration: none;
     }
 
-    .hightlight-grid {
+    .grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr;
         gap: 24px;
     }
-
-    .resoruces-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
+    
+    @media (min-width: 768px) {
+        .grid-4-layout {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .grid-3-layout {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
+
     .resoruces-grid img {
         width: 38px;
         display: block;
         margin-bottom: 1rem;
     }
+    
 
     .header {
         display: flex;
