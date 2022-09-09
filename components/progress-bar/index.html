@@ -1,0 +1,139 @@
+<h1>Progress bar</h1>
+<p>
+    A progress bar provides feedback about the duration and progression of a process, such as a download, file transfer, or installation, to indicate how long a user will be waiting.
+</p>
+<h2 id="overview">Overview</h2>
+<p>
+    A progress bar indicates that the user’s request has been received and the application is making progress toward completing the requested action. Progress bars inform users about the status of ongoing processes, the estimated time of how long a process will take, or if a request is being executed.
+</p>
+
+<div class="d-flex justify-content-center my-5">
+    <img src="components/progress-bar/images/default.svg">
+</div>
+
+
+<h3>When to use</h3>
+<ul>
+    <li>For a long operation or a process that can take a considerable or unknown amount of time</li>
+    <li>When the process can be described with quantitative information, such as a percentage</li>
+    <li>To visually show the progression of a system operation such as downloading, uploading, loading data, submitting a form, or saving updates</li>
+    <li>To convey that data is being requested, transferred, or processed</li>
+</ul>
+
+<h3>When not to use</h3>
+<ul>
+    <li>If the process takes less than 5 seconds to load, use loading instead.</li>
+    <li>When the progress is determined by user actions such as tutorials completed, or storage space, rather than system actions</li>
+</ul>
+
+<h2 id="sizing">Sizing</h2>
+<h3>Height</h3>
+
+<p>The progress bar is offered in two different sizes—big (8px) and small (4px). The big progress bar height is typically used when there is large amounts of space on a page. The small progress bar height is commonly used when space is restricted and can be placed within cards, data tables, or side panels.
+</p>
+<div class="d-flex col-12 justify-content-around border p-4 rounded mt-3">
+    <div class="text-center">
+        <img src="components/progress-bar/images/big.svg">
+        <div class="mt-2">8px height</div>
+    </div>
+    <div class="text-center">
+        <img src="components/progress-bar/images/small.svg">
+        <div class="mt-2">4px height</div>
+    </div>
+</div>
+    <h3>Width</h3>
+
+<p>
+    The width of a progress bar can vary based on the content. The minimum width of a progress bar is 48px and keep its width to a maximum of six columns when possible. If the progress bar width is too long, it can reduce readability. Don’t increase the progress bar length to fill the entire width of a window or application
+</p>
+
+<h2 id="placement">Placement</h2>
+<div><b>1. Default:</b> Full page, cards, dialogs.</div>
+  <div><b>2. Inline:</b> Data table</div>
+  <div><b>3. Indent:</b> Side panels, cards</div>
+  
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/progress-bar/images/form.svg">
+        <div>Default</div>
+    </div>
+    <div>
+        <img class="info" src="components/progress-bar/images/modal.svg">
+        <div>Default</div>
+    </div>
+    <div>
+        <img class="info" src="components/progress-bar/images/card.svg">
+        <div>Indent</div>
+    </div>
+    <div>
+        <img class="info" src="components/progress-bar/images/table.svg">
+        <div>Inline</div>
+    </div>
+</div>  
+  
+<h2 id="content">Content</h2>
+<p>
+    Progress bars have a label and helper text.    
+</p>
+<h3>Label</h3>
+<ul>
+    <li>Labels inform users what information the progress bar is processing.</li>
+    <li>Keep the label short and concise by limiting it to a few words or a single line of text.</li>
+    <li>Label text should never change as the progress bar is loading. It also does not need to be updated when the process ends, since the success or error information is provided by the bar indicator color and an icon, along with any helper text.</li>
+</ul>
+
+<h3>Helper text</h3>
+<ul>
+    <li>Helper text is used to show additional information about the process taking place.</li>
+    <li>Common use cases of helper text for a progress bar can either be a generic phrase, for example “Fetching assets…”, or it can indicate an exact amount of something to be completed, for example “42/256 items”</li>
+    <li>When indicating a loading percentage, the percentage number should count up as the bar progresses.</li>
+</ul>
+
+<h2 id="states">States</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>State</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <b>Active</b>
+            <p>
+                The active loading state, represented by an animated blue bar indicator, conveys that the action is still in progress.
+            </p>            
+        </td>
+        <td>
+            <img src="components/progress-bar/images/active.svg">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Success</b>
+            <p>
+                The success loading state, conveyed by a full-width green progress bar, indicates that the action completed successfully.
+            </p>            
+        </td>
+        <td>
+            <img src="components/progress-bar/images/success.svg">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Error</b>
+            <p>
+                The error loading state indicates that the action did not successfully complete. If an error occurs, an inline notification or error handling within the form should appear. As soon as a process fails, the indicator bar’s progress spans full width, turns red, and remains visible.
+            </p>            
+            <p>
+                User helper text to describe the cause of the error.
+            </p>
+        </td>
+        <td>
+            <img src="components/progress-bar/images/error.svg">
+        </td>
+      </tr>
+    </tbody>
+  </table>

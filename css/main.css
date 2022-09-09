@@ -181,6 +181,7 @@
     border-radius: 4px;
 }
 
+
 .layout__content > .do-dont-row .do {
     border-top: 3px solid #A6C811;
     background-image: url(../images/do.svg);
