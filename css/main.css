@@ -231,6 +231,16 @@ hint.warning {
     top: 0;
 }
 
+.layout__container {
+    width: auto;
+}
+
+@media (max-width: 1200px) {
+    .layout__container {
+        width: 100%;
+    }   
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
     .layout__scrollspy { display: none; }
