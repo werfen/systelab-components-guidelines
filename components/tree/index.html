@@ -1,0 +1,104 @@
+<h1>Tree</h1>
+<p> 
+    A tree view is a hierarchical structure that provides nested levels of navigation.
+</p>
+
+
+<h2 id="overview">Overview</h2>
+<p>
+    A tree view consists of nested heading levels that create a content hierarchy for users and assist with navigating large amounts of information. Following on with the tree analogy, the tree view component has branch nodes that can be expanded or collapsed to reveal or hide child nodes. The tree may also have leaf nodes. Leaf nodes can appear at any level of the tree hierarchy and do not have child nodes.
+</p>
+
+<div class="d-flex justify-content-center  items-align-center  my-5">
+    <img src="components/tree/images/tree.svg" class="mb-4">
+</div>
+
+
+
+<h3>When to use</h3>
+<ul>
+    <li>Often used for navigating file system structures that are made up of folders and documents.</li>
+    <li>To organize large amounts of information that can nest within multiple levels.</li>
+</ul>
+
+<h3>When not to use</h3>
+<ul>
+    <li>To show and hide UI elements or content on a page.</li>
+    <li>When you only need one level of nested information.</li>
+</ul>
+
+
+
+<h2 id="anatomy">Anatomy</h2>
+
+<div class="d-flex justify-content-center my-5">
+    <img src="components/tree/images/anatomy.svg">
+</div>
+
+
+
+<div><b>1. Branch node:</b> A node that has one or more child nodes. Can be expanded or collapsed to reveal or hide child nodes.</div>
+<div><b>2. Leaf node:</b> A node that has no child nodes and can appear at any level of the tree view hierarchy. A leaf node may be referred to as a child node when it is nested underneath a branch node.</div>
+<div><b>3. Caret icon:</b> An icon to expand or collapse a branch node.</div>
+<div><b>4. Node icon (optional):</b> An icon to visually represent and support a node label, they can assist the user to scan different content types quickly.</div>
+
+
+
+<h3>States</h3>
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/tree/images/hover.svg">
+        <div>Hover item</div>
+    </div>
+    <div>
+        <img class="info" src="components/tree/images/selected.svg">
+        <div>Selected item</div>
+    </div>
+</div>
+
+
+
+
+<h2 id="content">Content</h2>
+<p>
+    You may be able to label your nodes, or the labels may be generated from code. If you have control of your label names, follow these guidelines.
+</p>
+<h3>
+    Branch node label
+</h3>
+Be brief but clear while summarizing what kind of child nodes the branch node contains.
+
+<h3>
+    Leaf node label
+</h3>
+Be brief and descriptive about what information the leaf node contains.
+
+<h3>Overflow content</h3>
+If the node label is too long for one line in your tree view, add an ellipsis … and accompany with a browser-based tooltip to show the full string of text.
+
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/tree/images/overflow.svg">
+    </div>
+</div>
+
+
+
+<h2 id="usage">Usage</h2>
+<h3>Using multiple sources in one tree view</h3>
+<p>
+    If you need to display hierarchical information from different sources, display them in a single tree view as separate sections with section headings. These sources should not cross-reference each other so that you don't confuse users. Single selection and multi-selection should work as expected for a single tree view component.
+</p>
+<div class="d-flex col-12 justify-content-around border p-4 rounded">
+    <div class="text-center">
+        <img src="components/tree/images/multiple.svg">
+    </div>
+</div>
+
+
+
+
+
+
+
+
