@@ -1,0 +1,142 @@
+<h1>Tooltip</h1>
+<p>
+    Tooltips display additional information upon hover or focus.
+</p>
+
+<div class="d-flex justify-content-center my-5">
+    <img src="components/tooltip/images/default.svg">
+</div>
+
+
+
+<h2 id="overview">Overview</h2>
+<p>
+    The tooltip should be paired with an interactive UI element like a button. Tooltips should be used sparingly and contain succinct, supplementary information.
+    The information included should be contextual, helpful, and nonessential while providing that extra ability to communicate and give clarity to a user.
+    </p>
+
+    <h3>When to use</h3>
+<ul>
+    <li>Describe icon buttons</li>
+    <li>When more information is useful in helping a user make decisions</li>
+    <li>When an element needs more context or explanation</li>
+</ul>
+
+
+<h3>When not to use</h3>
+<ul>
+    <li>
+        Since a tooltip disappears when a user hovers away, do not include information that is pertinent for the user to complete their task. Use helper text that is always visible and accessible for vital information such as required fields.
+    </li>
+    <li>When more information is useful in helping a user make decisions</li>
+    <li>When an element needs more context or explanation</li>
+</ul>
+
+
+<div class="do-dont-row">
+    <div>
+        <img class="do" src="components/tooltip/images/password-do.svg">
+        <div>Do use helper text for pertinent information.
+
+        </div>
+    </div>
+    <div>
+        <img class="dont" src="components/tooltip/images/password-dont.svg">
+        <div>Don't use tooltips to communicate crucial information</div>
+    </div>
+    <div>
+        <img class="dont" src="components/tooltip/images/interactive-dont.svg">
+        <div>Do not use interactive elements or action inside a tooltip.</div>
+    </div>
+</div>
+
+
+
+
+<h2 id="placement">Placement</h2>
+<p>
+    Tooltip directions by default are set to auto. Upon opening, tooltips can detect the edges of the browser to properly be placed in view so the container does not get cutoff. Tooltips can instead use specific directions and may be positioned right, left, bottom, or top to the trigger item.
+</p>
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/tooltip/images/top.svg">
+        
+    </div>
+    <div>
+        <img class="info" src="components/tooltip/images/bottom.svg">
+        
+    </div>
+    <div>
+        <img class="info" src="components/tooltip/images/right.svg">
+        
+    </div>
+    
+    <div>
+        <img class="info" src="components/tooltip/images/left.svg">
+    </div>
+</div>
+
+
+
+<h2 id="alignment">Alignment</h2>
+<p>
+    The container of the tooltip may be aligned to start, center or end to keep the container from bleeding off the page or covering important information. The UI trigger button and caret tip should be vertically center with each other to clearly associate the tooltip and the trigger. This is especially helpful when multiple elements are close to each other.
+</p>
+
+<div class="d-flex col-12 justify-content-around border p-4 rounded">
+    <div class="text-center">
+        <img src="components/tooltip/images/align-left.svg">
+        <div class="mt-2">Aligned to start</div>
+    </div>
+    <div class="text-center">
+        <img class="info" src="components/tooltip/images/align-center.svg">
+        <div class="mt-2">Aligned to center</div>
+      </div>
+    <div class="text-center">
+        <img class="info" src="components/tooltip/images/align-right.svg">
+        <div class="mt-2">Aligned to end</div>
+    </div>
+    
+</div>
+
+
+
+<h2 id="behaviors">Behaviors</h2>
+<h3>
+    Immediate or delayed appearance and hide
+    </h3>
+
+<p>
+    Tooltips attached to help icons appear immediately. For conventional UI elements where a tooltip appearing immediately would be intrusive, delay appearance or hide with a warmup period.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
