@@ -1,0 +1,193 @@
+<h1>Toast</h1>
+
+<p>
+    Toasts display brief, temporary notifications. They're meant to be noticed without disrupting a user's experience or requiring an action to be taken.
+</p>
+
+<h2 id="overview">Overview</h2>
+<p>
+Toasts are non-modal, time-based window elements used to display short messages. They usually appear at the bottom of the screen and disappear after a few seconds.
+</p>
+
+<h3>Toast or Message popup?</h3>
+
+
+
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/toast/images/toast-file.svg">
+        <div>Toasts should only be used for confirmations, simple notifications, and low-priority alerts that do not need to completely interrupt the user experience.</div>
+    </div>
+    <div>
+        <img class="dont" src="components/toast/images/messagepopup-file.svg">
+        <div>Message popus are ideal for when a situation requires a user's attention, either for displaying important information or prompting for a response.
+        </div>
+    </div>
+</div>
+
+<h2 id="placement">Placement</h2>
+<p>
+    Toast position differs depending on platform scale. By default, a toast is placed at the bottom end for desktop scale and at the bottom center for mobile scale, to avoid disrupting the user experience.
+</p>
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/toast/images/top-center.svg">
+        <div>Top center</div>
+    </div>
+    <div>
+        <img class="info" src="components/toast/images/bottom-center.svg">
+        <div>Bottom center</div>
+    </div>
+    <div>
+        <img class="info" src="components/toast/images/top-end.svg">
+        <div>Top end</div>
+    </div>
+    <div>
+        <img class="info" src="components/toast/images/bottom-end.svg">
+        <div>Bottom end</div>
+    </div>
+    
+</div>
+
+<h2 id="content">Content</h2>
+
+<div class="d-flex col-12 flex-column justify-content-around border p-4 rounded mb-2">
+    <div class="text-center">
+        <img src="components/toast/images/max-width.svg">
+        <div>Max width: 530px</div>
+    </div>
+    <div class="text-center mt-5">
+        <img src="components/toast/images/max-height.svg">
+        <div>Max height: 72px</div>
+    </div>
+</div>
+
+
+<b>Title</b>
+<ul>
+    <li>The title should be short and descriptive, explaining the most important piece of information.</li>
+    <li>When possible, communicate the main message using just the title.</li>
+    <li>Limit content to one sentence.</li>
+</ul>
+
+<b>Body</b>
+<ul>
+    <li>Be concise and avoid repeating or paraphrasing the title</li>
+    <li>Limit content to two sentences.</li>
+</ul>
+
+<b>Action</b>
+<ul>
+    <li>Keep labels concise and clearly indicate the action the user can take.</li>
+    <li>Limit action labels to one or two words.</li>
+</ul>
+
+
+<div class="do-dont-row">
+    <div>
+        <img class="dont" src="components/toast/images/redundant-action.svg">
+        <div>Don't include a redundant action</div>
+    </div>
+    <div>
+        <img class="dont" src="components/toast/images/two-action.svg">
+        <div>Don't display more than one action</div>
+    </div>
+</div>
+
+<h2 id="sizing">Sizing</h2>
+<div class="d-flex col-12 justify-content-around border p-4 rounded mb-2">
+    <div class="text-center">
+        <img src="components/toast/images/max-content.svg">
+    </div>
+</div>
+
+
+<p>
+    Toast notifications use a max width depends on the placement. Limit toast notifications to one line bt title and one line by body.
+</p>
+
+
+<h2 id="variants">Variants</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Example</th>
+        <th scope="col">Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          
+            <td>
+                <img src="components/toast/images/success.svg">
+            </td>
+            <td>
+                <p>
+                Confirm a task was completed as expected
+                </p>
+            </td>
+          </tr> 
+      <tr>
+        <td>
+            <img class="d-block  my-2" src="components/toast/images/warning.svg">
+        </td>
+        <td>
+            
+          
+          <p>
+            Inform users that they are taking actions that are not desirable or might have unexpected results
+          </p>
+          
+        </td>
+      </tr> 
+      <tr>
+        <td>
+            <img src="components/toast/images/error.svg">
+        </td>
+        <td>
+            
+            <p>
+                Inform users of an error or critical failure and optionally block the user from proceeding until the issue has been resolved
+                </p>
+        </td>
+      </tr> 
+      <tr>
+        <td>
+            <img src="components/toast/images/info.svg">
+        </td>
+        <td>
+          <p>
+            
+            Provide additional information to users that may not be tied to their current action or task
+          </p>
+        </td>
+      </tr> 
+    </tbody>
+  </table>
+  
+
+
+
+<h2 id="behaviors">Behaviors</h2>
+<h3>
+    Auto-dismissible
+    </h3>
+
+<p>
+    By default, a toast will dismiss when the user clicks the close button. A toast also has the option to auto-dismiss. Be sure to set a minimum of 5 seconds so that users can have time to read the toast message. If an actionable toast is set to auto-dismiss, make sure that the action is still available elsewhere in the app.
+</p>
+<hint>Toast with automatically dismiss and action button, it is important that there are alternative routes to navigate to the link destination.
+</hint>
+<h3>Close button</h3>
+    <p>
+        When the notification is important, the user can be forced to dismiss it manually via the close button.
+    </p>
+
+    <div class="d-flex col-12 justify-content-around border p-4 rounded mb-2">
+        <div class="text-center">
+            <img src="components/toast/images/close.svg">
+        </div>
+    </div>
+    
+
