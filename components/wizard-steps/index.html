@@ -1,0 +1,88 @@
+<h1>Wizard steps</h1>
+
+<p>
+    The wizard steps is a visual representation of a user’s progress through a set of steps, guiding toward the completion of a specified process.
+</p>
+
+<h2 id="overview">Overview</h2>
+<div class="bg-light d-flex col-12 border p-4 rounded">
+    <div class="text-center">
+        <img src="components/wizard-steps/images/stepper.svg">
+    </div>
+</div>
+
+<h3>When to use it</h3>
+<ul>
+    <li>Use wizard steps to keep the user on track when completing a specific task</li>
+    <li>When the global goal could be divided in sub-tasks</li>
+</ul>
+
+<hint>
+    By dividing the end goal into smaller, sub-tasks, it increases the percentage of completeness as each task is completed.
+</hint>
+
+
+<h3>When not to use</h3>
+<ul>
+    <li>
+        Do not use the wizard steps as the primary navigation menu.
+    </li>
+    <li>
+        When the are only one step.
+    </li>
+    <li>
+        When the are a lot of sub-tasks.
+    </li>
+</ul>
+
+
+<h2 id="anatomy">Anatomy</h2>
+<div class="d-flex justify-content-center my-5">
+    <img src="components/wizard-steps/images/anatomy.svg">
+</div>
+  <div><b>1. Step button:</b> Indicates the step number and it is used to navigate through the steps. Also indicates if the step it's done or it's pending.</div>
+  <div><b>2. Title step:</b> Help the user to context de step</div>
+  <div><b>3. Summary (optional):</b> Any extra or aditional help to the user.</div>
+  <div><b>4. Separator:</b> Line to join steps, when the step it's done the line is filled blue to indicate the finished step.</div>
+
+<hint>
+    Display the steps in order from left to right. Indicate to the user that they are performing a multistep process, and show the direction of movement.
+</hint>
+
+<h2 id="placement">Placement</h2>
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/wizard-steps/images/placement-main.svg">
+        <div>The wizard steps must be align centered in the container</div>
+    </div>
+    <div>
+        <img class="info" src="components/wizard-steps/images/placement-sidebar.svg">
+    </div>
+    <div>
+        <img class="info" src="components/wizard-steps/images/placement-dialog.svg">
+    </div>
+</div>
+
+
+
+<h2 id="behaviors">Behaviors</h2>
+<ul>
+    <li>Clicking in the button step, allow the user to return to a previous step to review their data submission.</li>
+    <li>For the pending steps the buttons are disabled.</li>
+</ul>
+
+
+
+
+<h2 id="variant">Variant</h2>
+<h3>Vertical stepper</h3>
+<p>
+    Vertical steppers are designed for narrow screen sizes or mobile devices.
+</p>
+
+<div class="bg-light d-flex col-12 border p-4 rounded">
+    <div class="text-center">
+        <img src="components/wizard-steps/images/vertical.svg">
+    </div>
+</div>
+
