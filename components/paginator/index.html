@@ -1,0 +1,50 @@
+<h1>Paginator</h1>
+
+<p>
+    Pagination is used for splitting up content or data into several pages, with a control for navigating to the next or previous page.
+</p>
+
+
+<h2 id="best-practices">Best practices</h2>
+<b>Identify the current page</b>
+<p>
+    
+Clearly identify which page the user is on by displaying the current page number. By providing context into how many pages there are in total (eg. 1 of 4 pages), you can help provide clarity around the data displayed.
+</p>
+
+<b>Provide various options for navigating</b>
+<p>
+Previous and next chevrons or links are the most useful way for the user to move forward or backward through pages of data.
+Provide an inline select in which users can choose the page they wish to navigate to.
+</p>
+
+<h2 id="variants">Variants</h2>
+<h3>Default paginator</h3>
+<div class="d-flex col-12 flex-column justify-content-around border p-4 rounded">
+    <div class="text-center mt-2">
+        <img src="components/paginator/images/default.svg">
+        <div class="mt-2">Small size (32px)</div>
+    </div>
+    <div class="text-center mt-5">
+        <img src="components/paginator/images/large.svg">
+        <div class="mt-2">Large size (38px)</div>
+    </div>
+</div>
+
+<h3>Table paginator</h3>
+<div class="d-flex col-12 justify-content-around border p-4 rounded mb-5">
+    <div class="text-center">
+        <img src="components/paginator/images/table.svg">
+
+    </div>
+</div>
+
+
+
+<div class="d-flex col-12 justify-content-around border p-4 rounded">
+    <div class="text-center">
+        <img src="components/paginator/images/unknown-pages.svg">
+
+    </div>
+</div>
+When we don't known the number of pages the "n pages" and the total items is removed
