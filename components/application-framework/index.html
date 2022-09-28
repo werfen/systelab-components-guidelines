@@ -1,0 +1,54 @@
+<h1>Application framework</h1>
+
+<p>
+    This pattern outlines some of the qualities that make a application consistent, familiar, and usable.
+</p>
+
+<div class="d-flex justify-content-center mb-5">
+    <img class="w-100" src="components/application-framework/images/default.svg">
+</div>
+
+<h2 id="overview">Overview</h2>
+
+<p>
+    In order to facilitate the user experience, we have created a generic app layout that helps make the app consistent and usable.
+</p>
+<p>
+    the architecture of this layout is mainly to make the most of the screen width for this reason the navigation is made up of icons
+</p>
+
+
+<h3>Anatomy</h3>
+
+<div class="d-flex justify-content-center">
+    <img class="w-100" src="components/application-framework/images/anatomy.svg">
+</div>
+<div><b>1. Header name:</b> For Werfen product name. This should always and only link the user to the domain’s home page. In many cases the baseline is used to give context to the user about de product (eg: laboratory name)</div>
+<div><b>2. Utilities (optional):</b>
+    The header provides a home for global system-level utilities from anywhere in the site. Utility icons should not be used to directly navigate to an area. Instead, they should open a panel that provides access to other places in the product.
+    </div>
+<div><b>3. Logged user:</b> Provide information about the logged user.</div>
+<div><b>4. Main menu (optional):</b> The main menu icon is used to open product navigation, in a big applications you could use a second navigation bottom aligned.</div>
+<hint>The main menu icon used must identify the application module it represents</hint>
+
+<h3>Behaviours</h3>
+
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/application-framework/images/dropdown.svg">
+        <div>Logged user has a dropdown menu with contextual options</div>
+    </div>
+    <div>
+        <img class="info" src="components/application-framework/images/tooltip.svg">
+        <div>The main menu has a tooltip to provide information about the module</div>
+    </div>
+    <div>
+        <img class="info" src="components/application-framework/images/left-panel.svg">
+        <div>Header with left panel</div>
+    </div>
+</div>
+
+
+
+
+
