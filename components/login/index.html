@@ -1,0 +1,108 @@
+<h1>Login</h1>
+
+<p>
+    The login page allows a user to gain access to an application by entering their user ID and password.
+</p>
+
+<div class="d-flex justify-content-center mb-5">
+    <img class="w-100" src="components/login/images/default.svg">
+</div>
+
+<h2 id="overview">Overview</h2>
+
+<p>
+    Login is often the first interaction a user has with your product. This entry point experience is an important moment in establishing your product’s brand and experience and sets the tone for their overall experience with the product.
+</p>
+<p>
+    the architecture of this layout is mainly to make the most of the screen width for this reason the navigation is made up of icons
+</p>
+
+
+<h3>Anatomy</h3>
+
+<div class="d-flex justify-content-center mb-3">
+    <img class="w-100" src="components/login/images/anatomy.svg">
+</div>
+
+
+<div>
+    <b>1. Subtitle:</b>
+    For Werfen product name. (In some cases a product had many applications)
+</div>
+
+<div>
+    <b>2. Title:</b>
+    For Werfen application name.
+</div>
+
+<div>
+    <b>3. Version information:</b>
+    Show the version and bundle information.
+</div>
+
+<div>
+    <b>4. Logo:</b>
+    Is the product logo, check your product team's guidance and choose an asset accordingly.
+</div>
+
+<div>
+    <b>5. Required fields:</b> 
+    The user ID and password fields are both required although.
+
+</div>
+
+<div>
+    <b>6. Remember user:</b>
+    Saves the user ID and presents the completed input field the next time the user logs in.
+
+</div>
+
+<div>
+    <b>7. Submit button:</b>
+    Button label should be 'Log in'.
+</div>
+
+<div>
+    <b>8. Forgot username/password link:</b>
+    Takes users to a page where they can recover their username and/or password.
+</div>
+
+<div><b>9. Brand logo:</b>
+    Show Werfen logo and copyright related information.
+</div>
+
+<div>
+    <b>10. Background image:</b>
+    Check your product team's guidance and choose an asset accordingly.
+</div>
+
+
+<h2 id="errors-and-validation">Errors and validation</h2>
+    <h3>Client-side errors</h3>
+    <p>
+        Validate as much of the user's data before submission as possible. This real-time validation should happen when the input field loses focus and checks for input errors like invalid characters and empty fields. This helps users easily identify mistakes and fix them before submitting the login form.
+    </p>
+
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/login/images/user-error.svg">
+        <div>Example of User Id client error</div>
+    </div>
+    <div>
+        <img class="info" src="components/login/images/password-error.svg">
+        <div>Example of password error</div>
+    </div>
+</div>
+
+<h3>Server-side errors</h3>
+<p>
+    If there are server-side errors when the user submits the login form, the page should be reloaded, the password field cleared, and the user returned to the username input field. Use an inline notification to display the errors and provide clear direction on how users should resolve the issue.
+</p>
+<div class="do-dont-row">
+    <div>
+        <img class="info" src="components/login/images/error-auth.svg">
+        <div>Example of a server-side notification on a login flow</div>
+    </div>
+</div>
+
+
