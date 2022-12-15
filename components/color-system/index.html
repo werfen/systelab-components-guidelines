@@ -22,7 +22,7 @@ The core blue family serves as the primary action color across all Systelab Comp
 
             <div class="neutral-100">
                 <div>100</div>
-                <div>#F8F8F8</div>
+                <div>#F4F4F4</div>
             </div>
             <div class="neutral-200 used">
                 <div>200</div>
@@ -82,9 +82,9 @@ The core blue family serves as the primary action color across all Systelab Comp
             </div>
             <div class="primary-500 used">
                 <div>500</div>
-                <div>#008DF2</div>
+                <div>#158FEF</div>
             </div>
-            <div class="primary-600">
+            <div class="primary-600 used">
                 <div>600</div>
                 <div>#0064D1</div>
             </div>
@@ -289,17 +289,20 @@ The core blue family serves as the primary action color across all Systelab Comp
     </div>
 
 <h2 id="functional-colors">Functional colors</h2>
+<hint>
+    A color could be used as background color like in a badge, card, button, border or as a font color.
+</hint>
 <p>
-    Systelab Components use a set of colors to convey certain functions and meanings. These colors have been vetted and tested to meet the accessibility standard for low vision.
+    Some examples of the common colors applied to:
 </p>
 
-
+<img class="my-5 d-block mx-auto" src="components/color-system/images/usecase.svg">
 <div class="color-palettes gy-4">
     <div class="palette">
         <h5>Background and borders</h5>
-        <div class="neutral-200">
-            <div>200</div>
-            <div>#E3E3E3</div>
+        <div class="neutral-100">
+            <div>100</div>
+            <div>#F4F4F4</div>
         </div>
         <div class="neutral-300">
             <div>300</div>
@@ -314,40 +317,17 @@ The core blue family serves as the primary action color across all Systelab Comp
 
     <div class="palette">
         <h5>Typography</h5>
-        <div class="neutral-800">
+        <div class="font-neutral-800">
             <div>800</div>
             <div>#6A6A6A</div>
         </div>
-        <div class="neutral-900">
+        <div class="font-neutral-900">
             <div>900</div>
             <div>#3F3F3F</div>
         </div>
-        <div class="neutral-1000">
+        <div class="font-neutral-1000">
             <div>1000</div>
             <div>#000000</div>
-        </div>
-    </div>
-    <div class="palette">
-        <h5>Buttons</h5>
-        <div class="primary-400">
-            <div>400</div>
-            <div>#4BACF1</div>
-        </div>
-        <div class="primary-500">
-            <div>500</div>
-            <div>#008DF2</div>
-        </div>
-        <div class="neutral-700">
-            <div>700</div>
-            <div>#848484</div>
-        </div>
-        <div class="neutral-800">
-            <div>800</div>
-            <div>#6A6A6A</div>
-        </div>
-        <div class="danger-500">
-            <div>500</div>
-            <div>#FF4944</div>
         </div>
     </div>
     <div class="palette">
@@ -356,13 +336,13 @@ The core blue family serves as the primary action color across all Systelab Comp
             <div>500</div>
             <div>#C2D95D</div>
         </div>
-        <div class="primary-400">
-            <div>400</div>
-            <div>#4BACF1</div>
+        <div class="danger-500">
+            <div>500</div>
+            <div>#FF4944</div>
         </div>
-        <div class="primary-800">
+        <div class="secondary-800">
             <div>800</div>
-            <div>#004188</div>
+            <div>#785CB1</div>
         </div>
         <div class="neutral-1000">
             <div>1000</div>
@@ -371,6 +351,10 @@ The core blue family serves as the primary action color across all Systelab Comp
     </div>
 
 </div>
+
+
+
+
 <h2 id="usage">Usage</h2>
 <h3>Base Colors</h3>
 <p>Colors used in Systelab Components components and design recommendations.
@@ -416,8 +400,13 @@ Each color swatch in the palette is labeled with a black or white letter A to in
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid #f1f1f1;
     }
 
+    .palette > div:last-child {
+        border-bottom: none;
+    }
+    
     .palette > h5 {
         font-size: 1rem;
     }
@@ -437,12 +426,16 @@ Each color swatch in the palette is labeled with a black or white letter A to in
     .neutral-900 { background-color: #3F3F3F; color: white; }
     .neutral-1000 { background-color: #000000; color: white; }
 
-    
+    .font-neutral-800 { color: #6A6A6A; }
+    .font-neutral-900 { color: #3F3F3F; }
+    .font-neutral-1000 { color: #000000; }
+
+
     .primary-100 { background-color: #F2FAFF; }
     .primary-200 { background-color: #DFF5FF; }
     .primary-300 { background-color: #7BD6FF; }
     .primary-400 { background-color: #46BEF5; }
-    .primary-500 { background-color: #008DF2; }
+    .primary-500 { background-color: #158fef; color: white;}
     .primary-600 { background-color: #0064D1; color: white; }
     .primary-700 { background-color: #0054AF; color: white; }
     .primary-800 { background-color: #004188; color: white; }
@@ -464,9 +457,9 @@ Each color swatch in the palette is labeled with a black or white letter A to in
     .danger-200 { background-color: #FEAEAB; }
     .danger-300 { background-color: #FC817E; }
     .danger-400 { background-color: #FF6C68; }
-    .danger-500 { background-color: #EC5252; }
-    .danger-600 { background-color: #FE3631; }
-    .danger-700 { background-color: #F5221D; }
+    .danger-500 { background-color: #EC5252; color:white;}
+    .danger-600 { background-color: #FE3631; color:white;}
+    .danger-700 { background-color: #F5221D; color:white;}
     .danger-800 { background-color: #E81C16; color: white; }
     .danger-900 { background-color: #D7110C; color: white; }
     .danger-1000 { background-color: #AA0702; color: white;}
