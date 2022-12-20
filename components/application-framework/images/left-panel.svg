@@ -24,8 +24,8 @@
 <rect x="74" y="413" width="127" height="10" fill="#BBBBBB"/>
 <rect x="74" y="442" width="103" height="10" fill="#BBBBBB"/>
 <rect x="74" y="326" width="103" height="10" fill="#BBBBBB"/>
-<rect x="283" y="212" width="103" height="10" fill="#2656C9"/>
-<rect x="56" y="348" width="34" height="5" transform="rotate(-90 56 348)" fill="#2656C9"/>
+<rect x="283" y="212" width="103" height="10" fill="#0064D1"/>
+<rect x="56" y="348" width="34" height="5" transform="rotate(-90 56 348)" fill="#0064D1"/>
 <rect x="404" y="212" width="103" height="10" fill="#686868"/>
 <path d="M393.288 223.168C393.213 223.355 393.101 223.493 392.952 223.584C392.808 223.675 392.659 223.72 392.504 223.72H391.904L396.712 211.744C396.781 211.573 396.88 211.443 397.008 211.352C397.136 211.261 397.288 211.216 397.464 211.216H398.064L393.288 223.168Z" fill="black"/>
 <rect x="283" y="249" width="763" height="176" fill="#F0F0F0"/>

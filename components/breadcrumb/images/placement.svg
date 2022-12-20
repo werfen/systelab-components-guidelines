@@ -1,7 +1,7 @@
 <svg width="800" height="530" viewBox="0 0 800 530" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 530H800V0H0V530Z" fill="#D1D1D1"/>
 <rect x="27" y="86" width="230" height="20" fill="white"/>
-<rect x="27" y="66" width="64" height="9" fill="#2656C9"/>
+<rect x="27" y="66" width="64" height="9" fill="#0064D1"/>
 <path d="M0 50H800V20H0V50Z" fill="#171717"/>
 <rect x="27" y="116" width="747" height="394" fill="white"/>
 <rect x="27" y="116" width="747" height="35" fill="#626262"/>
@@ -75,7 +75,7 @@
 <circle cx="46" cy="434" r="2" fill="#848484"/>
 <line x1="103.707" y1="68" x2="106.536" y2="70.8284" stroke="#626262" stroke-linecap="round"/>
 <line x1="0.5" y1="-0.5" x2="4.5" y2="-0.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 103 74)" stroke="#626262" stroke-linecap="round"/>
-<rect x="119" y="66" width="64" height="9" fill="#2656C9"/>
+<rect x="119" y="66" width="64" height="9" fill="#0064D1"/>
 <line x1="195.707" y1="68" x2="198.536" y2="70.8284" stroke="#626262" stroke-linecap="round"/>
 <line x1="0.5" y1="-0.5" x2="4.5" y2="-0.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 195 74)" stroke="#626262" stroke-linecap="round"/>
 </svg>
