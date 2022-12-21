@@ -25,9 +25,26 @@ The core blue family serves as the primary action color across all Systelab Comp
 </ul>
 
 
-
-<img class="d-block mb-5" src="components/color-system/images/primary-palette.svg">
-
+<div class="color-palettes">
+    <div class="p-3 primary-600">
+        <div><strong>Primary color</strong></div>
+        <div>#0064D1</div>
+        <div>blue-600</div>
+    </div>
+    <div class="p-3 neutral-800">
+        <div><strong>Secondary color</strong></div>
+        <div>#6A6A6A</div>
+        <div>neutral-800</div>
+    </div>
+    <div class="p-3 neutral-1000">
+        <div><strong>Black</strong></div>
+        <div>#000000</div>
+    </div>
+    <div class="p-3 border">
+        <div><strong>White</strong></div>
+        <div>#FFFFFF</div>
+    </div>
+</div>
 <hint>
     A color palette could be used as background color like in a badge, card, button, border or as a font color.
 </hint>
@@ -318,16 +335,51 @@ The core blue family serves as the primary action color across all Systelab Comp
     <p>
         Alert colors are for indicating error conditions, warnings, and successes, include: Green for positive actions, yellow for warnings and red for errors.
     </p>
+    <hint>
+        Could be used as background color like in a badge, background, card, button or borders.
+    </hint>
+    <div class="color-palettes">
+        <div class="p-3 red-600">
+            <div><strong>Danger color</strong></div>
+            <div>red-500</div>
+        </div>
+        <div class="p-3 yellow-500">
+            <div><strong>Warning color</strong></div>
+            <div>yellow-500</div>
+        </div>
+        <div class="p-3 green-500">
+            <div><strong>Success color</strong></div>
+            <div>green-500</div>
+        </div>
+    </div>
+    
+
 
     
-    <img class="d-block" src="components/color-system/images/alert.svg">
-    <hint>
-        Could be used as background color like in a badge, card,  button or borders.
-    </hint>
-    
-    <h3>In text:</h3>
+    <h3>In text application:</h3>
     Due to the little contrast they offer warning an success colors, especially with small text, avoid text with warning and success colors. Use the icon with the appropriate color and the text with gray-900
-    <img class="d-block my-5" src="components/color-system/images/icons.svg">
+    
+    <div class="color-palettes mt-4">
+<div class="danger">
+    <div><img class="mr-2" src="components/color-system/images/error.svg">Error message </div>
+    <div class="mt-3 black">Icon: red-500</div>
+    <div class=" black">Text: red-800</div>
+    
+</div>
+
+    <div class="warning">
+        <div><img class="mr-2" src="components/color-system/images/warning.svg"> Warning message</div>
+        <div class="mt-3 black">Icon: yellow-500</div>
+    <div class=" black">Text: neutral-900</div>
+</div>
+
+    <div class="success">
+        <div><img class="mr-2" src="components/color-system/images/success.svg"> Success message</div>
+        <div class="mt-3 black">Icon: green-500</div>
+    <div class=" black">Text: neutral-900</div>
+    </div>
+</div>
+
     <hint>Danger could be used as text. It pass the accesibility AA</hint>
 <h2 id="common-used-colors">Common used colors</h2>
 <div class="color-palettes-common gy-4">
@@ -425,6 +477,7 @@ Each color swatch in the palette is labeled with a black or white text to indica
 
 
 <style>
+
     .color-palettes-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -539,5 +592,13 @@ Each color swatch in the palette is labeled with a black or white text to indica
     .green-800 { background-color: #869F16; }
     .green-900 { background-color: #576A00; color: white;}
     .green-1000 { background-color: #415000; color: white;}
+
+    .danger {
+        color: #e81c16
+    }
+    .warning, .success {
+        color: #3F3F3F
+    }
+    .black {color: #000;}
 
 </style>
